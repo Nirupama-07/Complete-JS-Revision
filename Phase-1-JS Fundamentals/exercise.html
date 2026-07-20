@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises Answers</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="shortcut icon" href="./images/js.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Practice Exercise Answers</h1>
+    <div class="flex-2 mt-10 pl-9 mr-6">
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(1)Swap two numbers</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                let num1=parseInt(prompt("Enter a number:")) <br>
+                let num2=parseInt(prompt("Enter another number:")) <br>
+
+                let temp <br>
+
+                temp=num1 <br>
+                num1=num2 <br>
+                num2=temp <br>
+
+                console.log("After swapping numbers are:",num1,num2)</p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(2)Calculators</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                let num1=parseInt(prompt("Enter a number:")) <br>
+                let num2=parseInt(prompt("Enter another number:")) <br>
+                let operations=prompt("Enter what operation you want to perform(+,-,x,/,%):") <br>
+
+                if (operations==='+'){ <br>
+                let result=num1+num2 <br>
+                console.log("The result is:",result) <br>
+                }else if(operations==='-'){ <br>
+                let result=num1-num2 <br>
+                console.log("The result is:",result) <br>
+                }else if(operations==='x'){ <br>
+                let result=num1*num2 <br>
+                console.log("The result is:",result) <br>
+                }else if(operations==='/'){ <br>
+                let result=num1/num2 <br>
+                console.log("The result is:",result) <br>
+                }else if(operations==='%'){ <br>
+                let result=num1%num2 <br>
+                console.log("The result is:",result) <br>
+                }else{ <br>
+                console.log("Enter valid operation.") <br>
+                }</p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(3)Temperature Convertor</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                let temperature = Number(prompt("Enter temperature:")); <br>
+                let choice = prompt("Enter C for Celsius to Fahrenheit or F for Fahrenheit to Celsius:"); <br>
+
+                if (choice === "C") { <br>
+                let fahrenheit = (temperature * 9 / 5) + 32; <br>
+                console.log(`${temperature}°C = ${fahrenheit}°F`); <br>
+                } else if (choice === "F") { <br>
+                let celsius = (temperature - 32) * 5 / 9; <br>
+                console.log(`${temperature}°F = ${celsius.toFixed(2)}°C`); <br>
+                } else { <br>
+                console.log("Invalid choice"); <br>
+                }</p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(4)Even/Odd</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                let num1=parseInt(prompt("Enter a number:")) <br>
+
+                if(num1%2==0){ <br>
+                console.log(`${num1} is even`) <br>
+                }else{ <br>
+                console.log(`${num1} is odd`) <br>
+                }</p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(5)Positive/Negative</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                let num1=parseInt(prompt("Enter a number:")) <br>
+
+                if(num1>0){ <br>
+                console.log(`${num1} is positive`) <br>
+                }else if(num1<0){ <br>
+                    console.log(`${num1} is negative`) <br>
+                    }else{ <br>
+                    console.log(`${num1} is zero`) <br>
+                    } </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 mb-7 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(6)Largest of 3 numbers</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                let num1=parseInt(prompt("Enter first number:")) <br>
+                let num2=parseInt(prompt("Enter second number:")) <br>
+                let num3=parseInt(prompt("Enter third number:")) <br>
+
+                if(num1>num2){ <br>
+                if(num1>num3){ <br>
+                console.log(`${num1} is the greatest`) <br>
+                }else{ <br>
+                console.log(`${num3} is the greatest`) <br>
+                } <br>
+                }else{ <br>
+                if(num2>num3){ <br>
+                console.log(`${num2} is the greatest`) <br>
+                }else{ <br>
+                console.log(`${num3} is the greatest`) <br>
+                } <br>
+
+                } </p>
+        </div>
+
+    </div>
+
+    <a href="index.html" class="pt-28 text-lg font-bold pl-20 text-blue-600 ">🡸 Go to Main Page</a>
+    <script src="script.js"></script>
+</body>
+
+</html>

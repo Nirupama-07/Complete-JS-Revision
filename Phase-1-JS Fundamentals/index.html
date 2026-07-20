@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase-1 Javascript Fundamentals</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="shortcut icon" href="./images/js.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript Fundamentals</h1>
+
+    <div class="flex-2 mt-10 pl-9 mr-6">
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(1)What is Javascript?</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">Answer: Javascript is a high level programming language,JIT compiled
+                language
+                that adds logic and functionality to the web. It turns static pages into apps-handling clicks, form,data
+                fetching and real-time updates. It is dynamically typed,prototype-based and support event-driven and
+                asynchronous programming.It can run in the browser and can also run in the server by using environments
+                like NodeJS.</p>
+        </div>
+
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 mt-10 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(2)What are the features of JavaScript</h1>
+            <p class="font-medium mt-4 pb-3 pl-5">Answer: Features of Javascript are:
+            <ul class="pl-8 pb-6 list-disc">
+                <li>Lightweight and can easily be embedded in HTML</li>
+                <li>Runs both on client side and server side</li>
+                <li>Dynamically typed which means variables types are decided during runtime</li>
+                <li>Supports object oriented programming by using prototype and classes</li>
+                <li>Event driven which helps in performing events such as click on button, mouse events,keyboard events
+                </li>
+                <li>Performs asynchronous tasks like promise,callback and async & await</li>
+                <li>Has First class functions:functions can be stored as a variable name,can be passed as an argument,
+                    can be used to call inside another function.</li>
+            </ul>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 mt-10 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(3)Is JS compiled or interpreted?</h1>
+            <p class="font-medium mt-4 pb-3 pl-5">Answer: Javascript is mostly interpreted but modern browsers like
+                chrome's V8 engine compile it just-in-time(JIT) to make it faster.
+                JS first reads your code line-by-line and runs it directly.
+                Modern browsers like chrome's V8 engine first translate parts of your code and convert it into machine
+                code while running it, so the computer can execute it much faster.
+
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 mt-10 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(4)What are variables?</h1>
+            <p class="font-medium mt-4 pb-2 pl-5">Answer: Variables are thec ontainer that stores data values so that it
+                can be accessed and modified later. <br>
+                There are 3 ways to declare a variable:
+            <ul class="pl-8 pb-6 list-disc">
+                <li>var:Declares variables within the function or globalscope and allows re-delaration and updates
+                    within the same scope.These are hoisted and initialized with undefined.</li>
+                <li>let:Declares variable within the block scope, alllowing updates but not re-declaration within the
+                    same block.</li>
+                <li>const:Declares variable within the global scope that cannot be reassigned after their initial
+                    assignment.</li>
+            </ul>
+
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 mt-10 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(5)What are datatypes in js?</h1>
+            <p class="font-medium mt-4 pb-2 pl-5">Answer: Javascript datatypes are used to define what type of value a
+                variable can hold and how these values behave in a program. There are two types of datatypes in js:
+                1.Primitive Data type 2.Non-Primitive Data Type
+            <h3 class="text-2xl font-bold pl-5 underline">Primitive Datatype</h3>
+            <p class="font-medium mt-1 pb-2 pl-5">Primitive datatype in js represent simple,immutable store directly in
+                memory, ensuring efficiency in both memory usage and performance.</p>
+            <p class="font-medium mt-1 pb-2 pl-5">It consists of:(s.c:-ssnnbbu)</p>
+            <ul class="pl-8 pb-6 list-disc">
+                <li>String:"It is a series of characters which are enclosed in '' or "" or ``. "</li>
+                <li>number:"It includes both integer and floating-point number. Special values like infinity,-infinity
+                    and NaN represented infinite values.</li>
+                <li>bigint:"It is a built-in object that provides a way to represent whole numbers greater than 253"
+                </li>
+                <li>boolean:"It returns only of two values:true or false"</li>
+                <li>undefined:"It is a variable which is declared but has not been initalized with a value is
+                    automatically assigned to undefined"</li>
+                <li>null:"It is a special object representing the intentional absence of a value."</li>
+                <li>symbol:"These are unique and immutable primitive value which are used as identifiers for object
+                    properties."</li>
+            </ul>
+
+            <h3 class="text-2xl font-bold pl-5 underline">Non-Primitive Datatype</h3>
+            <p class="font-medium mt-1 pb-2 pl-5">Non-Primitive datatype in js are the datatypes which are derived from
+                primitive datatypes. It is also known as derived datatype or referrence datatypes.</p>
+            <p class="font-medium mt-1 pb-2 pl-5">It consists of:(s.c:-oaf)</p>
+            <ul class="pl-8 pb-6 list-disc">
+                <li>Object:Js objects are key-value pairs which are used to store data created with{} or the new
+                    keyword.</li>
+                <li>Array:An array is a special kind of object which is used to store unordered collection of values of
+                    various datatypes.</li>
+                <li>Function:Function is a block of reusable code use to perform a specific taks when it is called.</li>
+                <li>Dates,Map,sets & more</li>
+            </ul>
+
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 mt-10 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(6)What is Type Conversion and Type Coercion?</h1>
+            <p class="font-medium mt-4 pb-2 pl-5">Answer: Type Conversion:
+            <p class="pl-7">Type Conversion is the explicit conversion of a datatype to another datatype.e.g.</p>
+            <ul class="pl-8 pb-6 list-disc">
+                <li>Number('123')</li>
+                <li>String(123)</li>
+                <li>boolean(1)</li>
+                <li>parseInt("123")</li>
+            </ul>
+
+
+            </p>
+            <p class="font-medium mt-4 pb-2 pl-5"> Type Coercion:
+                <p class="pl-7">In type coercion JS automatically converts a datatype to another datatype. e.g.</p>
+                <ul class="pl-8 pb-6 list-disc">
+                    <li>'5' + 2=52</li>
+                    <li>'5' - 2=3</li>
+                    <li>true + 1=2</li>
+
+                </ul>
+                <p>Notes:5 == "5"; // true — loose equality allows coercion
+                    5 === "5"; // false — strict equality checks type and value</p>
+
+            </p>
+        </div>
+
+         <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 mt-10 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(7)What are operators?</h1>
+            <p class="font-medium mt-4 pb-2 pl-5">Answer: Operators are the symbols that perform some operations on the values. <br>
+                
+            <ul class="pl-8 pb-6 list-disc">
+                <li>Arithmetic Operator: + , - , * , / , %</li>
+                <li>Assignment Operator: += , -= , *= , /= , **= </li>
+                <li>Comparision Operator: == , === , != , !== ,>= , <=</li>
+                <li>Logical Operator: && , || ,!</li>
+                <li>Bitwise Opearator: & , | , ^ , ~ </li>
+                <li>Ternary Operator: condition ? true : false</li>
+            </ul>
+
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 mt-10 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(8)What are Template literals?</h1>
+            <p class="font-medium mt-4 pb-2 pl-5">Answer: Template literals follows backticks(` `) and allows interpolation and multi-line strings.<br>
+                <div class="pl-5">
+                    <p>e.g.</p>
+                    <p>const name="Ridhi</p>
+                    <p>console.log( `Hello my name is: ${name} ` )</p>
+                    <p>output: Hello my name is Ridhi</p>
+                </div>
+            
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 mt-10 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(9)What are Comments?</h1>
+            <p class="font-medium mt-4 pb-2 pl-5">Answer: Comments are notes for developers and are ignored by js.<br>
+                <div class="pl-5">
+                    
+                    <p>//This is single line comment</p>
+                    <p>/* This is <br>
+                        multi-line <br>
+                        comment */
+                    </p>
+                </div>
+            
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 mt-10 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(10)What is strict mode?</h1>
+            <p class="font-medium mt-4 pb-2 pl-5">Answer: Strict mode makes JavaScript enforce stricter rules and helps detect common mistakes.
+            </p>
+        </div>
+    </div>
+
+    <div class="flex justify-between ">
+        <div class="pl-16 bg-blue-800 text-white mt-20 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
+            <h1 class="text-3xl font-bold">Practice Questions</h1>
+            <div class="mt-5 pl-12 pb-10 leading-11">
+                <h2 class="font-semibold text-lg pt-3">1.Swap Two Numbers</h2>
+                <h2 class="font-semibold text-lg pt-3">2.Calculator</h2>
+                <h2 class="font-semibold text-lg pt-3">3.Temperature Convertor</h2>
+                <h2 class="font-semibold text-lg pt-3">4.Even/odd</h2>
+                <h2 class="font-semibold text-lg pt-3">5.Positive/Negative</h2>
+                <h2 class="font-semibold text-lg pt-3">6.Largest of 3 numbers</h2>
+            </div>
+            <a href="exercise.html" class="pt-28 text-lg font-bold pl-20 text-white">Go to Exercise 🡺</a>
+            
+        </div>
+
+        <div class="pl-16 bg-blue-800 text-white mt-20 mr-28 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
+        <h1 class="text-3xl font-bold">Interview Questions</h1>
+        <div class="mt-5 pl-3">
+            <h2 class="font-semibold text-lg pt-2 text-blue-50">1.Difference between var,let & const</h2>
+            <h2 class="font-semibold text-lg pt-2 text-blue-50">2.Primitive vs Referrence types</h2>
+            <h2 class="font-semibold text-lg pt-2 text-blue-50">3.== vs ===</h2>
+            <h2 class="font-semibold text-lg pt-2 text-blue-50">4.undefined vs null</h2>
+            <h2 class="font-semibold text-lg pt-2 text-blue-50">5.typeof null (ans:object,because it is a long standing historical bug)</h2>
+            <h2 class="font-semibold text-lg pt-2 text-blue-50">6.NaN</h2>
+            <h2 class="font-semibold text-lg pt-2 text-blue-50">7.Truthy and falsy values(ans:only 7 falsy values: " ", 0,0n,false,undefined,null,NaN other than these values all are truthy)</h2>
+            <h2 class="font-semibold text-lg pt-2 text-blue-50">8.Implicit and explicit conversion</h2>
+        </div>
+        
+    </div>
+    </div>
+
+    <footer class="text-center bg-blue-950 text-white text-2xl font-semibold mt-10 pt-3 pb-2">
+        &copy; Nirupama Majhi 2026 
+    </footer>
+    
+    
+</body>
+
+</html>
