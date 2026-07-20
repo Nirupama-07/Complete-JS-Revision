@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase-2 Control Statements and Functions</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript Control-Flow &
+        Functions</h1>
+
+    <div class="flex-2 mt-10 pl-9 mr-6">
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(1)What is Control-Flow?</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">Answer:Control flow determines the order in which the javascript
+                program should executes statements. Normally program runs from top to bottom but conditional statements,
+                loops and functions can change the flow. </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(2)What is Conditionals?</h1>
+            <p class="font-medium mt-4 pl-5">Answer:Conditional executes different blocks based on the specified
+                condition which is either truthy or falsy.
+            <p class="pl-7 pt-2 font-semibold">There are 4 types of conditions: if , if-else , if...else-if...else ,
+                nested-if</p>
+            <p class="pl-7 pt-2 font-semibold">if: Runs only when the condition is true</p>
+            <p class="pl-7 ">
+                let age=parseInt(prompt("Enter your age")) <br>
+
+                if(age>18){ <br>
+                console.log("You can drive") <br>
+                }
+            </p>
+
+            <p class="pl-7 pt-2 font-semibold">if-else: It allows you to execute a block of code if the condition is
+                true or another block of code will execute if the condition is false.</p>
+            <p class="pl-7">
+                let age=parseInt(prompt("Enter your age")) <br>
+
+                if(age>18){ <br>
+                console.log("You can drive") <br>
+                }else{ <br>
+                console.log("You cannot drive") <br>
+                }
+            </p>
+
+            <p class="pl-7 pt-2 font-semibold">if...else-if..else: It is used to check multiple condition in sequence
+                and if one condition is true its block is executes and the rest are skipped.</p>
+            <p class="pl-7">
+                let age=parseInt(prompt("Enter your age")) <br>
+
+                if(age>18){ <br>
+                console.log("You can drive") <br>
+                }else if(age<0){        <br>
+                console.log("Age cannot be negative")  <br>
+                }else{ <br>
+                console.log("You cannot drive") <br>
+                }
+            </p>
+
+            <p class="pl-7 pt-2 font-semibold">nested-if: It allows to put an if statement inside another if statement.
+            </p>
+            <p class="pl-7 pt-2"></p>
+            </p>
+
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(3)What is switch?</h1>
+            <p class="font-medium mt-4 pl-5">Answer:The switch-case statement is used for decision making purposes. In
+                some cases it is more convenient than if-else-if.</p>
+            <p></p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(4)What is Ternary operator?</h1>
+            <p class="font-medium mt-4 pl-5">Answer:It is a short form of if-else, best for simple expressions. </p>
+            <p class="mt-4 pb-6 pl-5"> e.g.. const result= age>18 ? "Valid" : "Invalid"</p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(5)What is Loops?</h1>
+            <p class="font-medium mt-4 pl-5">Answer:Loop is used to execute a block of code repeatedly. It is of
+                following types: for loop , while loop , do-while loop </p>
+            <p class="mt-4 pl-5 font-semibold">for loop: It executes a block of code until the specified condition is
+                met.</p>
+            <p class="pb-6 pl-5"></p>
+
+            <p class="mt-4 pl-5 font-semibold">while loop: It executes a block of code the condition is true.</p>
+            <p class="pb-6 pl-5"></p>
+
+            <p class="mt-4 pl-5 font-semibold">do-while loop: It executes a block of code atleast once even if the
+                condition is false.</p>
+            <p class="pb-6 pl-5"></p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(6)What is break and continue?</h1>
+            <p class="font-medium mt-4 pl-5">Answer:break:it is used to terminate or stops the code when the condition
+                is met. </p>
+            <p class="mt-4 pb-6 pl-5"> </p>
+
+            <p class="font-medium mt-4 pl-5">continue:it is used to skips the current iteration and moves to the next
+                iteration. </p>
+            <p class="mt-4 pb-6 pl-5"> </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(7)What is Nested Loops?</h1>
+            <p class="font-medium mt-4 pl-5">Answer:It is a loop inside another loop. The inner function will complete
+                all its iteration for each iteration of outer loop. </p>
+            <p class="mt-4 pb-6 pl-5"> </p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
