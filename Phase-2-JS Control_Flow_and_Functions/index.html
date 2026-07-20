@@ -56,16 +56,27 @@
 
                 if(age>18){ <br>
                 console.log("You can drive") <br>
-                }else if(age<0){        <br>
-                console.log("Age cannot be negative")  <br>
-                }else{ <br>
-                console.log("You cannot drive") <br>
-                }
+                }else if(age<0){ <br>
+                    console.log("Age cannot be negative") <br>
+                    }else{ <br>
+                    console.log("You cannot drive") <br>
+                    }
             </p>
 
             <p class="pl-7 pt-2 font-semibold">nested-if: It allows to put an if statement inside another if statement.
             </p>
-            <p class="pl-7 pt-2"></p>
+            <p class="pl-7 pt-2">
+                let age=parseInt(prompt("Enter your age")) <br>
+                if(age>20 && age<29){ <br>
+                    console.log("You are in your 20's") <br>
+                        if(age%2==0){ <br>
+                            console.log("Your age is even")  <br>
+                        }else{ <br>
+                            console.log("Your age is odd") <br>
+                        } <br>
+                    }else{ <br>
+                        console.log("Your age does not lies between 20 and 29") <br>
+                    } </p>
             </p>
 
         </div>
