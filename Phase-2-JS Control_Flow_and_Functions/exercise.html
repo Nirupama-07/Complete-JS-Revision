@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises Answers</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" href="./images/js.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Practice Exercise Answers</h1>
+    <div class="flex-2 mt-10 pl-9 mr-6">
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(1)Fibonacci</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                num=parseInt(prompt("Enter a number")) <br>
+
+                function fibonacci(num){ <br>
+                    let a=0 <br>
+                    let b=1 <br>
+                    for(let i=1;i<num+1;i++){ <br>
+                        console.log(a)  <br>
+                        let c = a + b;  <br>
+                        a = b;  <br>
+                        b = c;  <br>
+                    }   <br>
+                }   <br>
+                fibonacci(num)
+
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-6 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(2)Prime Number</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                num=parseInt(prompt("Enter a number"))  <br>
+                let count=0 <br>
+                for(let i=1;i<=num;i++){    <br>
+                    if (num%i==0) { <br>
+                        count++ <br>
+                    }   <br>
+                    
+                }   <br>
+                if (count==2) { <br>
+                    console.log("It is a prime number") <br>
+                }else{  <br>
+                    console.log("It is not a prime number") <br>
+                }   <br>
+
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-6 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(3)Armstrong Number</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                num=parseInt(prompt("Enter a number"))  <br>
+
+                let temp=num    <br>
+                let total=0 <br>
+
+                while (temp>0){ <br>
+                    digit=temp%10   <br>
+                    total=total+digit**3    <br>
+                    temp = Math.floor(temp / 10);   <br>
+                }   <br>
+                if(total==num){ <br>
+                    console.log("It is armstrong number")   <br>
+                }else{  <br>
+                    console.log("It is not an armstrong number")    <br>
+                } <br>
+
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-6 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(4)Reverse Number</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                let num = parseInt(prompt("Enter a number"));   <br>
+
+                let temp = num; <br>
+                let rev = 0;    <br>
+
+                while (temp > 0) {  <br>
+                    let digit = temp % 10;  <br>
+                    rev = rev * 10 + digit; <br>
+                    temp = Math.floor(temp / 10);   <br>
+                }   <br>
+
+                console.log(rev);  <br>
+
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-6 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(5)Palindrome Number</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                let num = parseInt(prompt("Enter a number"));   <br>
+
+                let temp = num; <br>
+                let rev = 0;    <br>
+
+                while (temp > 0) {  <br>
+                    let digit = temp % 10;  <br>
+                    rev = rev * 10 + digit; <br>
+                    temp = Math.floor(temp / 10);   <br>
+                }   <br>
+
+                if (rev==num) {     <br>                   
+                    console.log("It is palindrome") <br>
+                }else{  <br>
+                    console.log("It is not a palindrome")   <br>
+                } <br>
+
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-6 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(6)Count Number</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                let num = parseInt(prompt("Enter a number"));   <br>
+
+                let temp = num; <br>
+                let count = 0;  <br>
+
+                while (temp > 0) {  <br>
+                    count++;    <br>
+                    temp = Math.floor(temp / 10);   <br>
+                }<br>
+
+                console.log("Number of digits:", count);
+
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-6 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(7)Multiplication table</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                let num = parseInt(prompt("Enter a number"));       <br>
+
+                for (let i = 1; i <= 10; i++) {     <br>
+                    console.log(`${num} x ${i} = ${num * i}`);      <br>
+                }<br>
+
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-6 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(8)Factorial</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                let num = parseInt(prompt("Enter a number"));   <br>
+
+                let factorial = 1;  <br>
+
+                for (let i = 1; i <= num; i++) {    <br>
+                    factorial *= i; <br>
+                }   <br>
+
+                console.log("Factorial =", factorial)<br>
+
+            </p>
+        </div>
+
+        <a href="index.html" class="pt-28 text-lg font-bold pl-20 text-blue-600 ">🡸 Go to Main Page</a>
+    </div>
+        <script src="exercise.js"></script>
+</body>
+
+</html>

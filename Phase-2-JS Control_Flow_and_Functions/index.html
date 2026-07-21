@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phase-2 Control Statements and Functions</title>
     <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" href="./images/js.png" type="image/x-icon">
 </head>
 
 <body>
@@ -496,10 +497,135 @@
             </p>
         </div>
 
+         <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(16)What is Hoisting?</h1>
+            <p class="font-medium mt-4 pl-5">Answer:Hoisting is the behavior of js where the declaration of function or classes or variables are moves to the top of their scope during the compilation phase.</p>
+            <p class="font-medium mt-2 pl-5">Function Declaration are fully hoisted , <br> var is hosited and initialized with undefined <br> let and const are hoisted but cannot be accessed before their declaration due to the temporal dead zone (TDZ).</p>
+            <p class="mt-4 pb-6 pl-5"> 
+                Function Declaration: <br>
+                greet();    <br>
+                function greet() {  <br>
+                    console.log("Hello");   <br>
+                } <br>
 
+                var:        <br>
+                console.log(name); // undefined <br>
+                var name = "Asha";  <br> <br>
 
-    </div>
+                let and const:  <br>
+                console.log(age); // ReferenceError <br>
+                let age = 22;
+            </p>
+        </div>
 
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(17)What is Temporal Dead Zone(TDZ)?</h1>
+            <p class="font-medium mt-4 pl-5">Answer:It is the period between entering a scope and initalization of a variables declared with let and const, during which accessing them results in an referrence error.</p>
+            <p class="mt-4 pb-6 pl-5"> 
+                hello() <br>
+                let hello=function(){   <br>
+                    console.log('hi')
+                }
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(18)What is closure?</h1>
+            <p class="font-medium mt-4 pl-5">Answer:A closure is created when an variable of an inner function can access the value from an outer function even if the outer function has finished executing</p>
+            <p class="mt-4 pl-5"> 
+                function createCounter() {  <br>
+                let count = 0;  <br>
+
+                return function () {    <br>
+                    count++;    <br>
+                    return count;   <br>
+                };  <br>
+                }   <br>
+
+                const counter = createCounter();    <br>
+
+                console.log(counter()); // 1    <br>
+                console.log(counter()); // 2    <br>
+                console.log(counter()); // 3
+            </p>
+            <p class="mt-4 pl-5">Uses:</p>
+            <ul class="mt-1 pb-6 pl-5">
+                <li class="list-disc">Data privacy and encapsulation</li>
+                <li class="list-disc">Counters</li>
+                <li class="list-disc">Event Handlers and callbacks</li>
+                <li class="list-disc">Memorization</li>
+            </ul>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(19)What is IIFE?</h1>
+            <p class="font-medium mt-4 pl-5">Answer:IIFE stand for Immediately Invoked Function. It is a function that is created and executed immediately.</p>
+            <p class="mt-4 pb-6 pl-5"> 
+                (function () {  <br>
+                    console.log("Runs immediately");    <br>
+                })();
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(20)What is Currying Function?</h1>
+            <p class="font-medium mt-4 pl-5">Answer:It transforms a function of multiple arguments into a series of functions each having one argument..</p>
+            <p class="mt-4 pb-6 pl-5"> 
+                function add(a){    <br>
+                    return function(b){ <br>
+                        return a+b  <br>
+                    }   <br>
+                }   <br>
+                const addTwo=add(2) //calls the first function  <br>
+                console.log(addTwo(4)) //calls the second function  <br>
+
+                or  <br>
+
+                const addTwo=add(2)(4)  <br>
+                console.log(addTwo)
+            </p>
+        </div>
+
+        <div class="flex justify-between ">
+            <div class="pl-16 bg-blue-800 text-white mt-20 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
+                <h1 class="text-3xl font-bold">Practice Questions</h1>
+                <div class="mt-5 pl-12 pb-10 leading-11">
+                    <h2 class="font-semibold text-lg pt-3">1.Fibonacci</h2>
+                    <h2 class="font-semibold text-lg pt-3">2.Prime Number</h2>
+                    <h2 class="font-semibold text-lg pt-3">3.Armstrong Number</h2>
+                    <h2 class="font-semibold text-lg pt-3">4.Reverse Number</h2>
+                    <h2 class="font-semibold text-lg pt-3">5.Palindrome</h2>
+                    <h2 class="font-semibold text-lg pt-3">6.Count Digits</h2>
+                    <h2 class="font-semibold text-lg pt-3">7.Multiplication Table</h2>
+                    <h2 class="font-semibold text-lg pt-3">8.Factorial</h2>
+                </div>
+                <a href="exercise.html" class="pt-28 text-lg font-bold pl-20 text-white">Go to Exercise 🡺</a>    
+            </div>
+
+            <div class="pl-16 bg-blue-800 text-white mt-20 mr-28 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
+                <h1 class="text-3xl font-bold">Interview Questions</h1>
+                <div class="mt-5 pl-3">
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">1.What is hoisting?</h2>
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">2.What is closure?</h2>
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">3.What is lexical scope?</h2>
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">4.undefined vs null</h2>
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">5.Function declaration and function expression</h2>
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">6.Arrow function and Normal function</h2>
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">7.this keyword(Ans: this is a keyword that refers to the object that is currently executing the function. Its value depends on how the function is called.)</h2>
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">8.Callback Function</h2>
+                </div>
+
+            </div>
+        </div>
+
+    <footer class="text-center bg-blue-950 text-white text-2xl font-semibold mt-10 pt-3 pb-2">
+        &copy; Nirupama Majhi 2026 
+    </footer>
     <script src="script.js"></script>
 </body>
 
