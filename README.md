@@ -11,39 +11,24 @@ A structured JavaScript revision repository covering everything from the fundame
 - Data Types
 - Operators
 - Type Conversion & Coercion
+
+
+---
+
+### 📌 Phase 2 – Control-Flow-and-Functions
 - Conditional Statements
 - Loops
 - Functions
+- Types of Functions
+- Function Binding
 - Scope
-- Strings
-- Arrays
-- Objects
-- Math Object
-- Date Object
-- Number Methods
+- Closure
+- IIFE
 
 ---
 
-### 📌 Phase 2 – DOM Manipulation
-- Selecting Elements
-- Changing Content
-- Styling Elements
-- Creating & Removing Elements
-- Event Listeners
-- Forms
-- DOM Traversing
-
----
-
-### 📌 Phase 3 – Advanced JavaScript
-- Callbacks
-- Promises
-- Async/Await
-- Fetch API
-- JSON
-- Error Handling
-- Local Storage
-- Session Storage
+### 📌 Phase 3 – Array and its methods
+- Arrays and methods
 
 ---
 
