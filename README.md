@@ -80,15 +80,22 @@ COMPLETE-JS/
 │
 ├── Phase-1-JS-Fundamentals/
 │   ├── index.html
-│   ├── script.js
+│   ├── exercise.html
 │   └── images/
 │
-├── Phase-2-DOM/
+├── Phase-2-Control-Flow and Functions/
 │   ├── index.html
 │   ├── script.js
+│   ├── exercise.html
+│   │── exercise.js
 │   └── images/
 │
-├── Phase-3-Advanced-JS/
+├── Phase-3-Arrays/
+│   ├── index.html
+│   ├── script.js
+│   ├── exercise.html
+│   │── exercise.js
+│   └── images/
 │
 ├── Phase-4-ES6/
 │
