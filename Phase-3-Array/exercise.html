@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises Answers</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" href="./images/js.png" type="image/x-icon">
+</head>
+    <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Practice Exercise Answers</h1>
+    <div class="flex-2 mt-10 pl-9 mr-6">
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(1)Remove Duplicates in an array</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                let arr=[1,2,2,2,3,3,4,5,6] <br>
+                let unique=[]   <br>
+
+                for(let num of arr){    <br>
+                    if(!unique.includes(num)){  <br>
+                        unique.push(num)    <br>
+                    }   <br>
+                }   <br>
+                console.log(unique) <br>
+
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(2)Largest Element</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                let arr=[20,12,30,43,23]    <br>
+                let largest=arr[0]  <br>
+
+                for(num of arr){    <br>
+                    if(num>largest){    <br>
+                        largest=num <br>
+                    }   <br>
+                }   <br>
+                console.log(largest) <br>
+
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(3)Second Largest Element</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                const arr = [10, 5, 20, 8, 15]; <br>
+
+                let largest = -Infinity;    <br>
+                let secondLargest = -Infinity;  <br>
+
+                for (let num of arr) {  <br>
+
+                    if (num > largest) {    <br>
+                        secondLargest = largest;    <br>
+                        largest = num;  <br>
+                    }   <br>
+
+                    else if (num > secondLargest && num !== largest) {  <br>
+                        secondLargest = num;    <br>
+                    }   <br>
+
+                }   <br>
+
+                console.log(secondLargest) <br>
+
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(4)Frequency Of Numbers</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                const arr = [1, 2, 2, 3, 1, 4, 2];      <br>
+
+                let freq = {};      <br>
+
+                for (let num of arr) {      <br>
+
+                    if (freq[num]) {        <br>
+                        freq[num]++;        <br>
+                    } else {        <br>
+                        freq[num] = 1;      <br>
+                    }       <br>
+
+                }       <br>
+
+                console.log(freq); <br>
+
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(5)Sum of array</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                const arr = [10, 20, 30, 40];       <br>
+
+                let sum = 0;        <br>
+
+                for (let num of arr) {      <br>
+                    sum += num;     <br>
+                }       <br>
+
+                console.log(sum);     <br>
+                //or        <br>
+                const sum = arr.reduce((acc, num) => acc + num, 0)<br>
+
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(6)Average Array</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                const arr = [10, 20, 30, 40];       <br>
+
+                let sum = 0;        <br>
+
+                for (let num of arr) {      <br>
+                    sum += num;     <br>
+                }       <br>
+
+                console.log(sum);     <br>
+                let average = sum / arr.length; <br>
+
+                console.log(average);   <br>
+
+            </p>
+        </div>
+
+         <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(7)Reverse Array</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                const arr = [1, 2, 3, 4];       <br>
+
+                let reversed = [];      <br>
+
+                for (let i = arr.length - 1; i >= 0; i--) {     <br>
+                    reversed.push(arr[i]);      <br>
+                }       <br>
+
+                console.log(reversed); <br>
+
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(8)Merge Array</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                const arr1 = [1, 2];    <br>
+                const arr2 = [3, 4];    <br>
+
+                const merged = [...arr1, ...arr2];  <br>
+
+                console.log(merged);<br>
+
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(9)Rotate Array</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                const arr = [1, 2, 3, 4, 5];        <br>
+
+                const first = arr.shift();      <br>
+
+                arr.push(first);        <br>
+
+                console.log(arr);<br>
+
+            </p>
+        </div>
+
+         <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(10)Flatten Array</h1>
+            <p class="font-medium mt-4 pb-6 pl-5">
+                const arr = [1, [2, [3, [4]]]]; <br>
+
+                console.log(arr.flat(Infinity));<br>
+
+            </p>
+        </div>
+
+        <a href="index.html" class="pt-28 text-lg font-bold pl-20 text-blue-600 ">🡸 Go to Main Page</a>
+    </div>
+        <script src="exercise.js"></script>
+<body>

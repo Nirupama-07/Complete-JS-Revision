@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase-3 Array</title>
+    <link rel="shortcut icon" href="./images/js.png" type="image/x-icon">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript Array</h1>
+
+    <div class="flex-2 mt-10 pl-9 mr-6">
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(1)What is an Array?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:An array is an ordered lists of values. Each values known as an element, is assigned to a numeric position called as index. Array can hold any type of data such as numeric, string,objects or even other arrays making them flexible. </p>
+            <p class="pl-5 ">e.g. const fruits=["apple","mango","cherry"]</p>
+            <p class="pl-5 pb-6">e.g. Empty array: let arr=[ ]</p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(2)How can you create an array?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:There are 2 ways to create an array. </p>
+            <p class="pl-5"><b class="text-red-700">Array Literal:</b> let arr=["Mango",23,54.6,true]</p>
+            <p class="pl-5 pb-6"><b class="text-red-700">Array Constructor:</b> let arr= new Array("Mango",23,54.6,true)(Avoid unless neccessary)</p>
+        </div>
+
+         <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(3)List all the important properties to perform on array.</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:The important properties to perform on array are: </p>
+            <p class="pl-5"><b class="text-green-700">length:</b> Returns total number of elements.</p>
+            <p class="pl-5">e.g. 
+                let arr=["Aman","Sudipta","Baishnovi"] <br>
+                console.log(arr.length) //output: 3 <br>
+            </p>
+            <p class="pl-5 pt-3 text-blue-700 font-medium">Array Methods</p>
+            <p class="pl-5"><b class="text-green-700">push:</b> Adds element at the end of the array.</p>
+            <p class="pl-5">e.g. 
+                let arr=["Aman","Sudipta","Baishnovi"] <br>
+                arr.push("Arav")    <br>
+                console.log(arr) //output:["Aman","Sudipta","Baishnovi","Arav"]  <br>
+            </p>
+            <p class="pl-5"><b class="text-green-700">pop:</b> Remove element at the end of the array.</p>
+            <p class="pl-5">e.g. 
+                let arr=["Aman","Sudipta","Baishnovi"] <br>
+                arr.pop()    <br>
+                console.log(arr) //output:["Aman","Sudipta","Baishnovi"]  <br>
+            </p>
+            <p class="pl-5"><b class="text-green-700">shift:</b> Remove element at the start of the array.</p>
+            <p class="pl-5">e.g. 
+                let arr=["Aman","Sudipta","Baishnovi"] <br>
+                arr.shift()    <br>
+                console.log(arr) //output:["Sudipta","Baishnovi"]  <br>
+            </p>
+            <p class="pl-5"><b class="text-green-700">unshift:</b> Add element at the start of the array.</p>
+            <p class="pl-5">e.g. 
+                let arr=["Sudipta","Baishnovi"] <br>
+                arr.unshift("Aman")    <br>
+                console.log(arr) //output:["Aman","Sudipta","Baishnovi"]  <br>
+            </p>
+            <p class="pl-5"><b class="text-green-700">splice:</b> Remove or replaces or add the element from the array.</p>
+            <p class="pl-5">syntax:array.splice(start, deleteCount, items...)   <br>
+                let arr=["Aman","Sudipta","Baishnovi"] <br>
+                <p class="text-amber-800 pl-5">Remove:</p>
+                <p class="pl-5">
+                    arr.splice(1,1)    <br>
+                    console.log(arr) //output:["Aman","Baishnovi"]  <br>
+                </p>
+                <p class="text-amber-800 pl-5">Add:</p>
+                <p class="pl-5">
+                    arr.splice(1,0,"Simran")    <br>
+                    console.log(arr) //output:["Aman","Simran","Baishnovi"]  <br>
+                </p>
+                <p class="text-amber-800 pl-5">Replace:</p>
+                <p class="pl-5">
+                    arr.splice(2,1,"Rahul")    <br>
+                    console.log(arr) //output:["Aman","Simran","Rahul"]  <br>
+                </p>
+            </p>
+            <p class="pl-5"><b class="text-green-700">slice:</b> Returns a new array without modifying the original.</p>
+            <p class="pl-5">e.g. 
+                let arr=["Aman","Simran","Rahul","Vaishnavi","pankaj"] <br>
+                let result=arr.slice(1,4)    <br>
+                console.log(result) //output:["Simran","Rahul","Vaishnavi"]  <br>
+            </p>
+            <p class="pl-5"><b class="text-green-700">concat:</b> Used to combines arrays.</p>
+            <p class="pl-5">e.g. 
+                let arr1=["Aman","Simran","Rahul","Vaishnavi","pankaj"] <br>
+                let arr2=["1","2","3","4","5"] <br>
+                let result=arr1.concat(arr2)    <br>
+                console.log(result) //output:["Aman","Simran","Rahul","Vaishnavi","pankaj","1","2","3","4","5"]  <br>
+            </p>
+            <p class="pl-5"><b class="text-green-700">includes:</b> Check if element exists.</p>
+            <p class="pl-5">e.g. 
+                let arr1=["Aman","Simran","Rahul","Vaishnavi","pankaj"] <br>
+                console.log(arr1.includes('2'))  //output: true  <br>
+            </p>
+            <p class="pl-5"><b class="text-green-700">indexOf:</b> Returns the first index.</p>
+            <p class="pl-5">e.g. 
+                let arr1=["Aman","Simran","Rahul","Vaishnavi","pankaj"] <br>
+                console.log(arr1.indexOf("Rahul"))  //output: 2  <br>
+                <p class="text-red-700 pl-5">if you want to access an index of an element which is not present then it will return -1</p>
+                
+            </p>
+            <p class="pl-5"><b class="text-green-700">find:</b> Returns the first matching value.</p>
+            <p class="pl-5">e.g. 
+                let arr1=['1','2','3','4','5'] <br>
+                console.log(arr1.find(num=>num>2))  //output: 3  <br>
+                
+            </p>
+            <p class="pl-5"><b class="text-green-700">findIndex:</b> Returns index of the first matching element.</p>
+            <p class="pl-5">e.g. 
+                let arr1=['1','2','3','4','5'] <br>
+                console.log(arr1.findIndex(num=>num>2))  //output: 2  <br>
+            </p>
+            <p class="pl-5"><b class="text-green-700">some:</b> Returns true if only one element satisfies the condition.</p>
+            <p class="pl-5">e.g. 
+                let arr1=['1','2','3','4','5'] <br>
+                console.log(arr1.some(num=>num>4))  //output: true  <br>
+            </p>
+            <p class="pl-5"><b class="text-green-700">every:</b> Returns true if all the element satisfies the condition.</p>
+            <p class="pl-5">e.g. 
+                let arr1=['1','2','3','4','5'] <br>
+                console.log(arr1.every(num=>num>4))  //output: false  <br>
+            </p>
+            <p class="pl-5"><b class="text-green-700">sort:</b> Returns the sorting array.</p>
+            <p class="pl-5">e.g. 
+                let arr1=['3','5','1','2','4'] <br>
+                console.log(arr1.sort())  //output:['1','2','3','4','5']  <br>
+                <p class="text-red-700 pl-5">For number always use .sort((a,b)=>a-b) for ascending</p>
+            </p>
+            <p class="pl-5"><b class="text-green-700">reverse:</b> Reverse an array.</p>
+            <p class="pl-5">e.g. 
+                let arr1=['1','2','3','4','5'] <br>
+                console.log(arr1.reverse)  //output: ['5','4','3','2','1']  <br>
+            </p>
+            <p class="pl-5"><b class="text-green-700">join:</b> Converts an array into a string.</p>
+            <p class="pl-5">e.g. 
+                let arr1=['1','2','3','4','5'] <br>
+                console.log(arr1.join("-"))  //output: [5-4-3-2-1]  <br>
+            </p>
+            <p class="pl-5"><b class="text-green-700">flat:</b> Flattens nested array.</p>
+            <p class="pl-5">e.g. 
+                let arr1=['1',[2,'3',4],'5'] <br>
+                console.log(arr1.flat())  //output: ['1',2,'3',4,'5'] <br>
+            </p>
+            <p class="pl-5"><b class="text-green-700">flatMap:</b> Map each element and then flattens the result by each value.</p>
+            <p class="pl-5">e.g. 
+                let arr1=[2,3,5] <br>
+                console.log(arr1.flatMap((num)=>num*2))  //output: [4,6,10] <br>
+            </p>
+            <p class="pl-5"><b class="text-green-700">Array.isArray:</b> Checks if a value is an array.</p>
+            <p class="pl-5">e.g. 
+                console.log(Array.isArray(['1','2']))  //output: true <br>
+            </p>
+            <p class="pl-5"><b class="text-green-700">Array.from():</b> Creates an array from an iterable or array like object.</p>
+            <p class="pl-5">e.g. 
+                console.log(Array.from("Hello"))  //output: ['H','e','l','l','o'] <br>
+            </p>
+            <p class="pl-5"><b class="text-green-700">Array.from():</b> Creates an array from a given argument.</p>
+            <p class="pl-5">e.g. 
+                console.log(Array.of(1,2,3))  //output: [1,2,3] <br>
+            </p>
+        </div>
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(4)How can you iterate over an array?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:Array Iteration Methods </p>
+            <p class="pl-5"><b class="text-green-700">forEach():</b> Loops through an array.</p>
+            <p class="pl-5 pb-2">e.g. 
+                let arr=["aman","sangeet","rani"]  <br>
+                arr.forEach((ch)=>{    <br>
+                    console.log(ch) <br>
+                })  <br>
+                //output:   <br>
+                aman    <br>
+                sangeet <br>
+                rani
+            </p>
+            <p class="pl-5"><b class="text-green-700">for..of:</b>A clean way to iterate over values</p>
+            <p class="pl-5 pb-2">e.g. 
+                let arr=["aman","sangeet","rani"]  <br>
+                for(const ch of arr){ <br>
+                    console.log(ch) <br>
+                }<br>
+                //output:   <br>
+                aman    <br>
+                sangeet <br>
+                rani
+            </p>
+            <p class="pl-5"><b class="text-green-700">map():</b> It transforms each element in an array and returns a new array.</p>
+            <p class="pl-5 pb-2">e.g. 
+                let arr8=[20,40,30]
+                console.log(arr8.map(num=>num*2)) <br>
+                //output:[40,80,60]   <br>
+            </p>
+            <p class="pl-5"><b class="text-green-700">filter():</b> Filters the array and returns a new array of matching elements.</p>
+            <p class="pl-5 pb-2">e.g. 
+                let arr8=[20,40,30]
+                console.log(arr8.filter(num=>num>30)) <br>
+                //output:[40]   <br>
+            </p>
+            <p class="pl-5"><b class="text-green-700">reduce():</b>Reduces an array into one element.</p>
+            <p class="pl-5 pb-2">syntax:array.reduce((accumulator,current)=>{},initialValue)
+                let arr8=[20,40,30]
+                let sum=arr8.reduce((acc,num)=>{return acc+num},0)  <br>
+                console.log(sum) <br>
+                //output:90   <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(5)What is Destructuring?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:Destructuring is a JavaScript feature that allows you to extract values from arrays or properties from objects into separate variables. </p>
+            <p class="pl-5 ">Array Destructuring:
+                const fruits = ["Apple", "Mango", "Banana"];    <br>
+
+                const [first, second, third] = fruits;  <br>
+
+                console.log(first); //Apple<br>
+                console.log(second);    //Mango<br>
+                console.log(third);  //Banana<br>
+            </p>
+            <p class="pl-5 pb-6">Object Destructuring:  <br>
+                const student = {   <br>
+                    name: "John",   <br>
+                    age: 22,    <br>
+                    city: "Delhi"   <br>
+                };  <br>
+
+                const {name, age} = student;    <br>
+
+                console.log(name);  //John  <br>
+                console.log(age);   //22    <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(6)What is Spread Operator(...)?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:The spread operator (...) expands an iterable (like an array, string, or object) into individual elements or properties. </p>
+            <p class="pl-5 ">Copy Array:
+                const arr1 = [1, 2, 3]; <br>
+
+                const arr2 = [...arr1]; <br>
+
+                console.log(arr2);  <br>
+            </p>
+            <p class="pl-5 pb-6">Merge Array:  <br>
+                const arr1 = [1, 2, 3];     <br>
+                const arr2=[4,5,6]      <br>
+
+                const arr3 = [...arr1,...arr2];     <br>
+
+                console.log(arr3);      <br>
+            </p>
+            <p class="pl-5 pb-6">Add Elements:  <br>
+                const arr1 = [1, 2, 3];     <br>
+                const arr2 = [7,4,...arr1,9];       <br>
+
+                console.log(arr2);      <br>
+            </p>
+            <p class="pl-5 pb-6">Update objects:  <br>
+                const user = {      <br>
+                    name: "John",       <br>
+                    age: 20     <br>
+                };      <br>
+
+                const updated = {       <br>
+                    ...user,        <br>
+                    age: 25     <br>
+                };      <br>
+
+                console.log(updated);       <br>
+            </p>
+        </div>
+
+         <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(7)What is Rest Operator(...)?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:The rest operator (...) collects multiple elements into a single array or object.Although it uses the same ... syntax as spread, its purpose is different.</p>
+            <p class="pl-5 ">Rest in Array Destructuring:   <br>
+                const arr = [1, 2, 3, 4, 5];    <br>
+
+                const [first, ...rest] = arr;   <br>
+
+                console.log(first); //output: 1<br>
+                console.log(rest);  //output:[2,3,4,5]<br>
+            </p>
+            <p class="pl-5 pb-6">Rest in object Destructuring:  <br>
+                const student = {       <br>
+                    name: "John",       <br>
+                    age: 20,        <br>
+                    city: "Delhi"       <br>
+                };      <br>
+
+                const {name, ...others} = student;      <br>
+
+                console.log(name);     //output: John <br>
+                console.log(others);    //{age:20,city:"Delhi"}    <br>
+            </p>
+            
+            
+        </div>
+
+
+    </div>
+    <div class="flex justify-between ">
+            <div class="pl-16 bg-blue-800 text-white mt-20 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
+                <h1 class="text-3xl font-bold">Practice Questions</h1>
+                <div class="mt-5 pl-12 pb-10 leading-11">
+                    <h2 class="font-semibold text-lg pt-3">1.Remove Duplicates</h2>
+                    <h2 class="font-semibold text-lg pt-3">2.Largest Element</h2>
+                    <h2 class="font-semibold text-lg pt-3">3.Second Largest</h2>
+                    <h2 class="font-semibold text-lg pt-3">4.Frequency of a element</h2>
+                    <h2 class="font-semibold text-lg pt-3">5.Sum of array</h2>
+                    <h2 class="font-semibold text-lg pt-3">6.Average</h2>
+                    <h2 class="font-semibold text-lg pt-3">7.Reverse Array</h2>
+                    <h2 class="font-semibold text-lg pt-3">8.Merge Array</h2>
+                    <h2 class="font-semibold text-lg pt-3">8.Rotate Array</h2>
+                    <h2 class="font-semibold text-lg pt-3">8.Flatten Array</h2>
+                </div>
+                <a href="exercise.html" class="pt-28 text-lg font-bold pl-20 text-white">Go to Exercise 🡺</a>    
+            </div>
+
+            <div class="pl-16 bg-blue-800 text-white mt-20 mr-28 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
+                <h1 class="text-3xl font-bold pt-7">Interview Questions</h1>
+                <div class="mt-5 pl-3">
+                    <h2 class="font-semibold text-lg pt-7 text-blue-50">1.map vs forEach</h2>
+                    <h2 class="font-semibold text-lg pt-7 text-blue-50">2.filter vs find</h2>
+                    <h2 class="font-semibold text-lg pt-7 text-blue-50">3.slice vs splice</h2>
+                    <h2 class="font-semibold text-lg pt-7 text-blue-50">4.reduce</h2>
+                    <h2 class="font-semibold text-lg pt-7 text-blue-50">5.some vs every</h2>
+                    <h2 class="font-semibold text-lg pt-7 text-blue-50">6.spread vs rest</h2>
+                    
+                </div>
+
+            </div>
+        </div>
+        <footer class="text-center bg-blue-950 text-white text-2xl font-semibold mt-10 pt-3 pb-2">
+            &copy; Nirupama Majhi 2026 
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>
