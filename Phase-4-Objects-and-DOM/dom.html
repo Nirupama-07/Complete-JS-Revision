@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Phase 4</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" href="./images/js.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript Objects and DOM</h1>
+
+    <div class="flex-2 mt-10 pl-9 mr-6">
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(1)What is DOM?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:The JS HTML DOM reprsents the structure of an HTML document as
+                a tree objects.It allows JS to interact with and modify the content and elements of a webpage
+                dynamically without reloading it. </p>
+            <p class="pl-5 font-bold">Features: <br>
+            <ul class="pl-5 pt-3">
+                <li class="pb-2">Tree structures:Represent the HTML document as a hierarchical tree of nodes.</li>
+                <li class="pb-2">Element access:Provides methods to select element such as
+                    getElementById(),getElementByTagName() and querySelector().</li>
+                <li class="pb-2">Dynamic Manipulation:Allows changing content, attributes and styles dynamically.</li>
+                <li class="pb-2">Event Handling:Support handling users interactions like click,doubleclick,mouse and
+                    keyboard events</li>
+            </ul>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(2)How can you select element in DOM?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:There are five ways to select element in a DOM. </p>
+
+            <ul class="pl-5 pt-3">
+                <li class="pb-2"><b>.getElementById()</b></li>
+                <li class="pb-2"><b>.getElementByClassName()</b></li>
+                <li class="pb-2"><b>.getElementByTagName()</b></li>
+                <li class="pb-2"><b>.querySelector():</b>Returns the first matching element.</li>
+                <li class="pb-2"><b>.querySelectorAll():</b>Returns all matching elements.</li>
+            </ul>
+            </p>
+        </div>
+
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(3)How can you change a content in DOM?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:There are two ways to change a content in a DOM. </p>
+
+            <ul class="pl-5 pt-3">
+                <li class="pb-2"><b>.textContent():Reads only text</b></li>
+                <li class="pb-2"><b>.innerHTML():Reads html</b></li>
+
+            </ul>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(4)How to change CSS in DOM?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:<br>
+                const h=document.getElementById("heading") <br>
+                h.style.color="red" <br>
+                h.style.backgroundColor="yellow"
+            </p>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(5)How to change attributes in DOM?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:<br>
+                const h=document.getElementByTagName("img") <br>
+                img.src="dog.jpg" <br>
+            <ul class="pl-5">
+                <li class="pb-3">getAttribute():console.log(image.getAttribute("src"));</li>
+                <li class="pb-3">setAttribute():image.setAttribute("src", "dog.jpg");</li>
+                <li class="pb-3">removeAttribute:image.removeAttribute("src");</li>
+            </ul>
+            </p>
+            </p>
+        </div>
+
+
+    </div>
+
+    <div class="flex justify-between ">
+        <div
+            class="pl-16 bg-blue-800 text-white mt-20 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
+            <h1 class="text-3xl font-bold">Practice Questions</h1>
+            <div class="mt-5 pl-12 pb-10 leading-11">
+
+                <h2 class="font-semibold text-lg pt-3">Build a simple page:</h2>
+                <h2 class="font-semibold text-lg pt-3 pl-5">1.with heading</h2>
+                <h2 class="font-semibold text-lg pt-3 pl-5">2.Paragraph</h2>
+                <h2 class="font-semibold text-lg pt-3 pl-5">3.. Image</h2>
+                <h2 class="font-semibold text-lg pt-3 pl-5">4. buttons</h2>
+                <h2 class="font-semibold text-lg pt-3">Each button should perform one task/h2>
+                    <h2 class="font-semibold text-lg pt-3 pl-5">1. Change the heading text</h2>
+                    <h2 class="font-semibold text-lg pt-3 pl-5">2.Change the paragraph color</h2>
+                    <h2 class="font-semibold text-lg pt-3 pl-5">3.Change the image</h2>
+
+
+            </div>
+
+        </div>
+
+        <div
+            class="pl-16 bg-blue-800 text-white mt-20 mr-28 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
+            <h1 class="text-3xl font-bold">Interview Questions</h1>
+            <div class="mt-5 pl-3 pt-2">
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">1.What is DOM?</h2>
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">2.Difference between HTML and DOM</h2>
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">3. Difference between innerHTML and textContent</h2>
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">4. Difference between HTMLCollection and NodeList
+                </h2>
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">5.Difference between querySelector() and
+                    getElementById()</h2>
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">6.Difference between getAttribute() and
+                    setAttribute()?</h2>
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">7.How do you change CSS using JavaScript?</h2>
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">8.What is the document object?</h2>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

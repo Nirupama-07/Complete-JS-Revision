@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./images/js.png" type="image/x-icon">
 </head>
 <body>
-     <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript Objects and DOM</h1>
+    <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript Objects and DOM</h1>
 
     <div class="flex-2 mt-10 pl-9 mr-6">
         <div
@@ -305,7 +305,7 @@
 
          <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
-            <h1 class="font-bold text-xl pl-5">Q(15)What is differnce netween shallow copy and deep copy?</h1>
+            <h1 class="font-bold text-xl pl-5">Q(15)What is differnce between shallow copy and deep copy?</h1>
             <p class="font-medium mt-4 pb-1 pl-5">Answer:</p>
             <p class="pl-7 mt-4 font-bold text-green-600">Shallow copy:A shallow copy copies only the first level of an object. If the object contains nested objects or arrays, those nested values are shared between the original and the copy.</p> 
                <p class="pl-5 ">e.g.   <br>
@@ -365,33 +365,44 @@
                     <h2 class="font-semibold text-lg pt-3 pl-5">1.Create an array of 5 students and print all their names</h2>
                     <h2 class="font-semibold text-lg pt-3 pl-5">2.Find the students of highest marks</h2>
                     <h2 class="font-semibold text-lg pt-3 pl-5">3.Calculate the average age</h2>
-                    <h2 class="font-semibold text-lg pt-3 pl-5">4.CSort students by marks</h2>
+                    <h2 class="font-semibold text-lg pt-3 pl-5">4.Sort students by marks</h2>
                     <h2 class="font-semibold text-lg pt-3 pl-5">5.Group students by department</h2>
                 </div>
-                <a href="exercise.html" class="pt-28 text-lg font-bold pl-20 text-white">Go to Exercise 🡺</a>    
+                <a href="exercise.html" class="pt-28 text-lg font-bold pl-20 text-white hover:cursor-pointer">Go to Exercise 🡺</a>    
             </div>
 
             <div class="pl-16 bg-blue-800 text-white mt-20 mr-28 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
                 <h1 class="text-3xl font-bold">Interview Questions</h1>
-                <div class="mt-5 pl-3">
-                    <h2 class="font-semibold text-lg pt-10 text-blue-50">1.What is an object in JavaScript?</h2>
-                    <h2 class="font-semibold text-lg pt-10 text-blue-50">2.Difference between Array and Object?</h2>
-                    <h2 class="font-semibold text-lg pt-10 text-blue-50">3.Dot notation vs Bracket notation?</h2>
-                    <h2 class="font-semibold text-lg pt-10 text-blue-50">4.What is this?</h2>
-                    <h2 class="font-semibold text-lg pt-10 text-blue-50">5.What is object destructuring?</h2>
-                    <h2 class="font-semibold text-lg pt-10 text-blue-50">6.What is the spread operator?</h2>
-                    <h2 class="font-semibold text-lg pt-10 text-blue-50">7.Difference between Object.keys(), Object.values(), and Object.entries()?</h2>
-                    <h2 class="font-semibold text-lg pt-10 text-blue-50">8.Difference between for...in and for...of?</h2>
-                    <h2 class="font-semibold text-lg pt-10 text-blue-50">9.How do you copy an object?</h2>
-                    <h2 class="font-semibold text-lg pt-10 text-blue-50">10.What is a shallow copy?</h2>
+                <div class="mt-5 pl-3 pt-2">
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">1.What is an object in JavaScript?</h2>
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">2.Difference between Array and Object?</h2>
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">3.Dot notation vs Bracket notation?</h2>
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">4.What is this?</h2>
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">5.What is object destructuring?</h2>
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">6.What is the spread operator?</h2>
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">7.Difference between Object.keys(), Object.values(), and Object.entries()?</h2>
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">8.Difference between for...in and for...of?</h2>
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">9.How do you copy an object?</h2>
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">10.What is a shallow copy?</h2>
+                    <h2 class="font-semibold text-lg pt-4 text-blue-50">11.What is a optional chaining? ans:Optional chaining lets you safely access nested object properties without causing an error if a property doesn't exist. <br>
+                        const student = {   <br>
+                        &nbsp;    name: "Rahul"   <br>
+                        };  <br>
+                        console.log(student.name); //Rahul
+                        console.log(student.address?.city); //undefined
+                    </h2>
+                    <h2 class="font-semibold text-lg pt-4 text-blue-50">12.What is Nullish Coelscing? ans: The Nullish Coalescing Operator (??) provides a default value only when the left side is null or undefined.</h2>
                 </div>
 
             </div>
         </div>
 
+    <a href="dom.html">
+        <h1 class="text-center bg-blue-700 text-white text-2xl font-bold mt-5 pt-1 pb-4 px-4 hover:cursor-pointer">Go to DOM🡺 </h1>
+    </a>
+    
 
-
-    <footer class="text-center bg-blue-950 text-white text-2xl font-semibold mt-16 pt-3 pb-2">
+    <footer class="text-center bg-blue-950 text-white text-2xl font-semibold mt-2 pt-3 pb-2">
         &copy; Nirupama Majhi 2026 
     </footer>
     <script src="script.js"></script>
