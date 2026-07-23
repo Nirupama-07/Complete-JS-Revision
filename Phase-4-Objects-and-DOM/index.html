@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects and DOM</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="shortcut icon" href="./images/js.png" type="image/x-icon">
+</head>
+<body>
+     <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript Objects and DOM</h1>
+
+    <div class="flex-2 mt-10 pl-9 mr-6">
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(1)What is object?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:An object in javascript is a collection of related data in key-value pairs where each key uniquely identifies its values. </p>
+            <p class="pl-5 ">e.g.   <br>
+                const student={ <br>
+                    &nbsp; name:"Nirupama",    <br>
+                    &nbsp; age:23  <br>
+                }   <br>
+                console.log(student)
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(2)How to create an object?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:An object can be created by using curly{ } braces or new keyword.</p>
+            <p class="pl-5 ">e.g.   <br>
+                const student={ <br>
+                    &nbsp; name:"Nirupama",    <br>
+                    &nbsp; age:23  <br>
+                }   <br>
+                console.log(student)    <br><br>
+                const student2=new Object()    <br>
+                student2.name="Priti"   <br>
+                student2.age=23 <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(3)How to access an object?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:An object can be accessed by using dot notation(.) or square bracket.</p>
+            <p class="pl-5 ">e.g.   <br>
+                const student={ <br>
+                    &nbsp; name:"Nirupama",    <br>
+                    &nbsp; age:23  <br>
+                }   <br>
+                console.log(student.name)    <br>
+                console.log(student["age"])
+               
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(4)How to update values in object?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:</p>
+            <p class="pl-5 ">e.g.   <br>
+                const student={ <br>
+                    &nbsp; name:"Nirupama",    <br>
+                    &nbsp; age:23  <br>
+                }   <br>
+                student.name="Asutosh"    <br>
+                console.log(student)
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(5)How to add properties in object?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:</p>
+            <p class="pl-5 ">e.g.   <br>
+                const student={ <br>
+                    &nbsp; name:"Nirupama",    <br>
+                    &nbsp; age:23  <br>
+                }   <br>
+                student.city="Bihar"    <br>
+                console.log(student)
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(6)How to delete properties in object?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:</p>
+            <p class="pl-5 ">e.g.   <br>
+                const student={ <br>
+                    &nbsp; name:"Nirupama",    <br>
+                    &nbsp; age:23  <br>
+                }   <br>
+                delete student.age    <br>
+                console.log(student)
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(7)How to write object inside another object?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:</p>
+            <p class="pl-5 ">e.g.   <br>
+                const student={ <br>
+                    &nbsp; name:"Nirupama",    <br>
+                    &nbsp; age:23  <br>,
+                    &nbsp; address:{        <br>
+                    &nbsp;  &nbsp;   &nbsp; city:"Bihar",       <br>
+                    &nbsp;  &nbsp;  &nbsp;   pin:756438      <br>
+                    &nbsp;  &nbsp;}       <br>
+                }   <br>
+                console.log(student)        <br>
+                console.log(student2.address)       <br>
+                console.log(student2.address.city)   <br>
+                
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(8)How to write array of object?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:</p>
+            <p class="pl-5 ">e.g.   <br>
+                const cards=[       <br>
+                   &nbsp; {       <br>
+                       &nbsp; &nbsp; name:"Shivangi",        <br>
+                       &nbsp; &nbsp; age:23      <br>
+                   &nbsp; },      <br>
+                   &nbsp; {       <br>
+                       &nbsp; &nbsp; name:"Harshad",     <br>
+                       &nbsp; &nbsp; age:32      <br>
+                   &nbsp; },      <br>
+                   &nbsp; {       <br>
+                       &nbsp; &nbsp; name:"Hina",        <br>
+                       &nbsp; &nbsp; age:34      <br>
+                   &nbsp; },      <br>
+                   &nbsp; {       <br>
+                       &nbsp; &nbsp; name:"Karthik",     <br>
+                       &nbsp; &nbsp; age:37      <br>
+                   &nbsp; }       <br>
+                ]       <br>
+                console.log(cards)      <br>
+                console.log(cards[2])       <br>
+                console.log(cards[1].name)  <br>
+                                
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(9)What is object methods?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:Object can also store functions in it, this is called object methods.</p>
+            <p class="pl-5 ">e.g.   <br>
+                
+                const profile={         <br>
+                   &nbsp; name:"Nirupama",            <br>
+                   &nbsp; greet:function(){           <br>
+                       &nbsp; &nbsp; console.log("Welcome")          <br>
+                   &nbsp; }           <br>
+                }           <br>
+                profile.greet()         <br>
+                console.log(profile.name)           <br>              
+            </p>
+        </div>
+
+        
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(10)What is this keyword in object methods?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:In javascript object methods, this usually refers to the object that called the method.</p>
+            <p class="pl-5 ">e.g.   <br>
+                
+                const profile={         <br>
+                   &nbsp; name:"Nirupama",            <br>
+                   &nbsp; greet:function(){           <br>
+                       &nbsp; &nbsp; console.log(`Welcome ${this.name}`)          <br>
+                   &nbsp; }           <br>
+                }           <br>
+                profile.greet()         <br>
+                          <br>              
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(11)How to iterate over objects?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:We can iterate over objects by using for...in loop.</p>
+            <p class="pl-5 ">e.g.   <br>
+                
+                const obj={ <br>
+                   &nbsp; brand:"dot & key",  <br>
+                   &nbsp; product:"sunscreen" <br>
+                }   <br>
+                for(key in obj){    <br>
+                   &nbsp; console.log(key,":",obj[key])   <br>
+                }             
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(12)What are the object methods</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:Some of the object methods:-</p>
+            
+               <p class="pl-7 mt-4 font-bold text-green-600">Object.keys()</p> 
+               <p class="pl-5 ">e.g.   <br>
+                    const obj={ <br>
+                    &nbsp; brand:"dot & key",  <br>
+                    &nbsp; product:"sunscreen" <br>
+                    }   <br>
+                    console.log(Object.keys(obj)) <br>           
+                </p>
+
+                <p class="pl-7 mt-4 font-bold text-green-600">Object.values()</p> 
+                <p class="pl-5 ">e.g.   <br>
+                    const obj={ <br>
+                    &nbsp; brand:"dot & key",  <br>
+                    &nbsp; product:"sunscreen" <br>
+                    }   <br>
+                    console.log(Object.values(obj)) <br>           
+                </p>
+
+                <p class="pl-7 mt-4 font-bold text-green-600">Object.keys()</p> 
+               <p class="pl-5 ">e.g.   <br>
+                    const obj={ <br>
+                    &nbsp; brand:"dot & key",  <br>
+                    &nbsp; product:"sunscreen" <br>
+                    }   <br>
+                    console.log(Object.entries(obj)) <br>           
+                </p>
+
+                <p class="pl-7 mt-4 font-bold text-green-600">hasOwnProperty()</p> 
+               <p class="pl-5 ">e.g.   <br>
+                    const obj={ <br>
+                    &nbsp; brand:"dot & key",  <br>
+                    &nbsp; product:"sunscreen" <br>
+                    }   <br>
+                    console.log(obj.hasOwnProperty("brand"))br>           
+                </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(13)What is object destructuring?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:Object destructuring lets you pull properties from an object into separate variables.</p>
+            <p class="pl-5 ">e.g.   <br>
+                
+                const person = {  <br>
+                   &nbsp; name: "Asha",  <br>
+                   &nbsp; age: 25  <br>
+                };  <br>
+
+                const { name, age } = person;  <br>
+
+                console.log(name); // "Asha"  <br>
+                console.log(age);  // 25      <br>   
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(14)Difference between for..in loop and for..of loop?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:.</p>
+            <p class="pl-5 ">e.g.   <br>
+                
+               <table class="pr-5">
+                <thead class="px-5">
+                    <tr>
+                        <th>features</th>
+                        <th>for..of</th>
+                        <th>for..in</th>
+                    </tr>
+                </thead>
+                <tbody class="pl-7">
+                    <tr>
+                        <td>Ierates over</td>
+                        <td>Keys</td>
+                        <td>Value</td>
+                    </tr>
+                    <tr>
+                        <td>Used for</td>
+                        <td>Objects</td>
+                        <td>Arrays,strings,maps,sets</td>
+                    </tr>
+                    <tr>
+                        <td>Returns</td>
+                        <td>key</td>
+                        <td>value</td>
+                    </tr>
+                    <tr>
+                        <td>works on objects</td>
+                        <td>yes</td>
+                        <td>no</td>
+                    </tr>
+                    <tr>
+                        <td>works on arrays</td>
+                        <td>yes</td>
+                        <td>yes</td>
+                    </tr>
+                </tbody>
+               </table>
+            </p>
+        </div>
+
+         <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(15)What is differnce netween shallow copy and deep copy?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:</p>
+            <p class="pl-7 mt-4 font-bold text-green-600">Shallow copy:A shallow copy copies only the first level of an object. If the object contains nested objects or arrays, those nested values are shared between the original and the copy.</p> 
+               <p class="pl-5 ">e.g.   <br>
+                    const person = {
+                        &nbsp; name: "Rahul",       <br>
+                        &nbsp; address: {       <br>
+                        &nbsp;     &nbsp; city: "Delhi"     <br>
+                        }       <br>
+                    };      <br>
+
+                    const copy = { ...person };     <br>
+
+                    copy.name = "Amit";     <br>
+
+                    &nbsp; console.log(person.name);        <br>
+                    &nbsp; console.log(copy.name);
+               </p>
+
+               <p class="pl-7 mt-4 font-bold text-green-600">Deep copy:A deep copy creates completely new copies of the object and all of its nested objects or arrays.</p> 
+               <p class="pl-5 ">e.g.   <br>
+                    const person = {    <br>
+                    &nbsp; name: "Rahul",  <br>
+                    &nbsp; address: {  <br>
+                        &nbsp: city: "Delhi"   <br>
+                    &nbsp; }   <br>
+                };  <br>
+
+                const copy = structuredClone(person);   <br>
+
+                copy.address.city = "Mumbai";   <br>
+
+                console.log(person.address.city);   <br>
+               </p>
+        </div>
+
+    </div>
+
+
+
+    <div class="flex justify-between ">
+            <div class="pl-16 bg-blue-800 text-white mt-20 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
+                <h1 class="text-3xl font-bold">Practice Questions</h1>
+                <div class="mt-5 pl-12 pb-10 leading-11">
+                    <h2 class="font-semibold text-lg pt-3">Basics</h2>
+                    <h2 class="font-semibold text-lg pt-3">Create a student Object</h2>
+                    <h2 class="font-semibold text-lg pt-3 pl-5">1.Print all properties</h2>
+                    <h2 class="font-semibold text-lg pt-3 pl-5">2.Update the age</h2>
+                    <h2 class="font-semibold text-lg pt-3 pl-5">3.Add an email property</h2>
+                    <h2 class="font-semibold text-lg pt-3 pl-5">4. Delete the city property</h2>
+                    <h2 class="font-semibold text-lg pt-3">Intermediate</h2>
+                    <h2 class="font-semibold text-lg pt-3 pl-5">1.Print all keys</h2>
+                    <h2 class="font-semibold text-lg pt-3 pl-5">2.Print all values</h2>
+                    <h2 class="font-semibold text-lg pt-3 pl-5">3.Check whether age exists</h2>
+                    <h2 class="font-semibold text-lg pt-3 pl-5">4.Count the number of properties</h2>
+                    <h2 class="font-semibold text-lg pt-3 pl-5">5.Merge two objects</h2>
+                    <h2 class="font-semibold text-lg pt-3">Advanced</h2>
+                    <h2 class="font-semibold text-lg pt-3 pl-5">1.Create an array of 5 students and print all their names</h2>
+                    <h2 class="font-semibold text-lg pt-3 pl-5">2.Find the students of highest marks</h2>
+                    <h2 class="font-semibold text-lg pt-3 pl-5">3.Calculate the average age</h2>
+                    <h2 class="font-semibold text-lg pt-3 pl-5">4.CSort students by marks</h2>
+                    <h2 class="font-semibold text-lg pt-3 pl-5">5.Group students by department</h2>
+                </div>
+                <a href="exercise.html" class="pt-28 text-lg font-bold pl-20 text-white">Go to Exercise 🡺</a>    
+            </div>
+
+            <div class="pl-16 bg-blue-800 text-white mt-20 mr-28 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
+                <h1 class="text-3xl font-bold">Interview Questions</h1>
+                <div class="mt-5 pl-3">
+                    <h2 class="font-semibold text-lg pt-10 text-blue-50">1.What is an object in JavaScript?</h2>
+                    <h2 class="font-semibold text-lg pt-10 text-blue-50">2.Difference between Array and Object?</h2>
+                    <h2 class="font-semibold text-lg pt-10 text-blue-50">3.Dot notation vs Bracket notation?</h2>
+                    <h2 class="font-semibold text-lg pt-10 text-blue-50">4.What is this?</h2>
+                    <h2 class="font-semibold text-lg pt-10 text-blue-50">5.What is object destructuring?</h2>
+                    <h2 class="font-semibold text-lg pt-10 text-blue-50">6.What is the spread operator?</h2>
+                    <h2 class="font-semibold text-lg pt-10 text-blue-50">7.Difference between Object.keys(), Object.values(), and Object.entries()?</h2>
+                    <h2 class="font-semibold text-lg pt-10 text-blue-50">8.Difference between for...in and for...of?</h2>
+                    <h2 class="font-semibold text-lg pt-10 text-blue-50">9.How do you copy an object?</h2>
+                    <h2 class="font-semibold text-lg pt-10 text-blue-50">10.What is a shallow copy?</h2>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    <footer class="text-center bg-blue-950 text-white text-2xl font-semibold mt-16 pt-3 pb-2">
+        &copy; Nirupama Majhi 2026 
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
