@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-DOM</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" href="images/js.png" type="image/x-icon">
+</head>
+<body>
+    <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript DOM Exercise</h1>
+    <div class="mt-10 ml-16 mr-12 ">
+        
+        <div class="flex gap-20">
+            <div class="ml-8 pl-3 mb-2 mt-7 pt-3 bg-gray-500 rounded-3xl transition-transform hover:-translate-y-3">
+                <img src="https://webneel.com/wallpaper/sites/default/files/images/01-2018/4-beautiful-flower-wallpaper-hd-saxyman.jpg" class="h-[300px] rounded-3xl" alt="">
+                <h1 class="text-center font-bold text-black text-2xl" id="heading1">This is heading1</h1>
+                <p class="text-white" id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio esse optio iusto ad sunt quisquam expedita dolores accusamus eos corporis perspiciatis laboriosam, modi quo fuga!</p>
+                <button class="bg-blue-700 text-white py-2 px-3 rounded-2xl mt-2 cursor-pointer" id="btn1">View More</button>
+            </div>
+
+            <div class="ml-8 pl-3 mb-2 mt-7 pt-3 bg-gray-500 rounded-3xl transition-transform hover:-translate-y-3">
+                <img src="https://static.vecteezy.com/system/resources/previews/022/257/312/large_2x/rose-flower-pictures-beautiful-roses-love-rose-flower-beautiful-flowers-wallpapers-ai-generated-free-photo.jpg" class="h-[300px] rounded-3xl" alt="">
+                <h1 class="text-center font-bold text-black text-2xl">This is heading1</h1>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio esse optio iusto ad sunt quisquam expedita dolores accusamus eos corporis perspiciatis laboriosam, modi quo fuga!</p>
+                <button class="bg-blue-700 text-white py-2 px-3 rounded-2xl mt-2 cursor-pointer" id="btn2">View More</button>
+            </div>
+
+            <div class="ml-8 pl-3 mb-2 mt-7 pt-3 bg-gray-500 rounded-3xl transition-transform hover:-translate-y-3">
+                <img src="https://static.vecteezy.com/system/resources/previews/026/447/797/non_2x/vibrant-petals-of-a-wet-pink-tulip-in-a-formal-garden-generated-by-ai-free-photo.jpg" class="h-[300px] rounded-3xl" alt="">
+                <h1 class="text-center font-bold text-black text-2xl">This is heading1</h1>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio esse optio iusto ad sunt quisquam expedita dolores accusamus eos corporis perspiciatis laboriosam, modi quo fuga!</p>
+                <button class="bg-blue-700 text-white py-2 px-3 rounded-2xl mt-2 cursor-pointer" id="btn3">View More</button>
+            </div>
+            
+        </div>
+        <div class="flex flex-col gap-5 font-medium text-black">Answer:     <br>
+            let btn1=document.getElementById("btn1")        <br>
+            let btn2=document.getElementById("btn2")        <br>
+            let btn3=document.getElementById("btn3")        <br>
+
+            btn1.addEventListener("click",()=>{     <br>
+               &nbsp; document.getElementById("heading1").textContent="Heading1 get changed"      <br>
+               &nbsp; document.getElementById("para1").innerHTML="The paragraph also get changed"     <br>
+            })      <br>
+        </div>
+
+        <a href="dom.html" class="pt-28 text-lg font-bold pl-20 text-blue-700 hover:cursor-pointer">🡸 Go to DOM page</a>
+    </div>
+
+    <script src="dom.js"></script>
+</body>
+</html>

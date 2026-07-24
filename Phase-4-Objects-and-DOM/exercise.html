@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-Object</title>
+    <link rel="shortcut icon" href="./images/js.png" type="image/x-icon">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript Object Exercise</h1>
+
+    <div class="flex-2 mt-10 pl-9 mr-6">
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(1)Create a student object</h1>
+            <h1 class="font-bold text-xl pl-5">Print all properties</h1>
+            <h1 class="font-bold text-xl pl-5">Update the age</h1>
+            <h1 class="font-bold text-xl pl-5">Add an email property</h1>
+            <h1 class="font-bold text-xl pl-5">Delete the city property</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:</p>
+            <p class="pl-5 "><br>
+                //Student object    <br>
+                const student={ <br>
+                  &nbsp;  name:"Priyansh",  <br>
+                  &nbsp;  age:24,   <br>
+                  &nbsp;  address:{ <br>
+                       &nbsp; &nbsp; city:"Bhopal", <br>
+                       &nbsp; &nbsp; pin:756493 <br>
+                  &nbsp;  } <br>
+                }   <br>
+                console.log(student)    <br>
+
+                student.age=25  <br>
+                console.log(student)    <br>
+
+                student.email="priyansh@gmail.com"  <br>
+                console.log(student)    <br>
+
+                delete student.address.city <br>
+                console.log(student)    <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            
+            <h1 class="font-bold text-xl pl-5">Print all keys</h1>
+            <h1 class="font-bold text-xl pl-5">Print all values</h1>
+            <h1 class="font-bold text-xl pl-5">Check whether age exists</h1>
+            <h1 class="font-bold text-xl pl-5">Count the number of properties/h1>
+            <h1 class="font-bold text-xl pl-5">Merge two objects/h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:</p>
+            <p class="pl-5 font-light"><br>
+                console.log(Object.keys(student))   <br>
+                console.log(Object.values(student)) <br>
+                console.log(student.hasOwnProperty("age"))  <br>
+                console.log(Object.keys(student).length)    <br>
+
+                const subject={ <br>
+                  &nbsp;  first:"coa",  <br>
+                  &nbsp;  second:"dsa", <br>
+                  &nbsp;  third:"js"    <br>
+                }   <br>
+                const merge={...student,...subject} <br>
+                console.log(merge)  <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            
+            <h1 class="font-bold text-xl pl-5">1.Create an array of 5 students and print all their names</h1>
+            <h1 class="font-bold text-xl pl-5">2.Find the students of highest marks</h1>
+            <h1 class="font-bold text-xl pl-5">3.Calculate the average age</h1>
+            <h1 class="font-bold text-xl pl-5">Count the number of properties/h1>
+            <h1 class="font-bold text-xl pl-5">4.Sort students by marks/h1>
+                <h1 class="font-bold text-xl pl-5">5.Group students by department/h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:</p>
+            <p class="pl-5  font-light">
+                const students=[        <br>
+                   &nbsp; {     <br>
+                      &nbsp; &nbsp;  name:"Priyansh",       <br>
+                      &nbsp; &nbsp;  mark:98,       <br>
+                      &nbsp; &nbsp;  age:24,        <br>
+                      &nbsp; &nbsp;  department:"CSE"       <br>
+                   &nbsp; },        <br>
+                   &nbsp; {     <br>
+                      &nbsp; &nbsp;  name:"Sudipta",        <br>
+                      &nbsp; &nbsp;  mark:88,       <br>
+                      &nbsp; &nbsp;  age:23,        <br>
+                      &nbsp; &nbsp;  department:"EE"        <br>
+                   &nbsp; },        <br>
+                   &nbsp; {     <br>
+                      &nbsp; &nbsp;  name:"Aish",       <br>
+                      &nbsp; &nbsp;  mark:93,       <br>
+                      &nbsp; &nbsp;  age:25,        <br>
+                      &nbsp; &nbsp;  department:"EEE"       <br>
+                   &nbsp; },        <br>
+                   &nbsp; {     <br>
+                      &nbsp; &nbsp;  name:"Kavita",     <br>
+                      &nbsp; &nbsp;  mark:78,       <br>
+                      &nbsp; &nbsp;  age:24,        <br>
+                      &nbsp; &nbsp;  department:"CSE"       <br>
+                   &nbsp; },        <br>
+                   &nbsp; {     <br>
+                      &nbsp; &nbsp;  name:"Jeon",       <br>
+                      &nbsp; &nbsp;  mark:90,       <br>
+                      &nbsp; &nbsp;  age:23,        <br>
+                      &nbsp; &nbsp;  department:"CSE"       <br>
+                   &nbsp; },        <br>
+                ]       <br>
+
+                students.forEach((item)=>{      <br>
+                    console.log(item)       <br>
+                })      <br>
+
+                const highest = students.reduce((max, student) => {     <br>
+                    return student.mark > max.mark ? student : max;     <br>
+                });     <br>
+
+                console.log(highest);       <br>
+
+                const averageAge = students.reduce((total, student) => {        <br>
+                    return total + student.age;     <br>
+                }, 0) / students.length;        <br>
+
+                console.log(averageAge);        <br>
+
+                const sortMarks=[...students].sort((a,b)=>a.mark-b.mark)        <br>
+                console.log(sortMarks)      <br>
+
+                const grouped = students.reduce((acc, student) => {     <br>
+                    if (!acc[student.department]) {     <br>
+                        acc[student.department] = [];       <br>
+                    }       <br>
+
+                    acc[student.department].push(student);      <br>
+
+                    return acc;     <br>
+                }, {});     <br>
+
+                console.log(grouped);       <br>
+
+            </p>
+        </div>
+        <a href="index.html" class="pt-28 text-lg font-bold pl-20 text-blue-600 ">🡸 Go to Main Page</a>
+    </div>
+    <script src="exercise.js"></script>
+</body>
+</html>
