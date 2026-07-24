@@ -21,27 +21,31 @@ A structured JavaScript revision repository covering everything from the fundame
 - Functions
 - Types of Functions
 - Function Binding
+- Arrow Functions
+- Template Literals
 - Scope
 - Closure
 - IIFE
+- Default Parameters
 
 ---
 
 ### 📌 Phase 3 – Array and its methods
 - Arrays and methods
-
----
-
-### 📌 Phase 4 – ES6+
-- Arrow Functions
-- Template Literals
 - Destructuring
 - Spread & Rest Operators
-- Default Parameters
-- Modules
 - Classes
-- Generators
-- Iterators
+---
+
+### 📌 Phase 4 – Objects and DOM
+- Objects
+- Accessing objects
+- Modifying objects
+- Array of objects
+- DOM
+- Select Element by DOM
+- Change content by using DOM
+- Change css by using DOM
 
 ---
 
@@ -97,7 +101,15 @@ COMPLETE-JS/
 │   │── exercise.js
 │   └── images/
 │
-├── Phase-4-ES6/
+├── Phase-4-Objects-and-DOM/
+|   ├── index.html
+│   ├── script.js
+│   ├── exercise.html
+│   │── exercise.js
+|   │── dom.html
+|   │── domExercise.html
+|   │── dom.js
+│   └── images/
 │
 ├── Phase-5-Projects/
 │
@@ -120,7 +132,7 @@ COMPLETE-JS/
 Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Complete-JS.git
+git clone https://github.com/Nirupama-07/Complete-JS-Revision.git
 ```
 
 Go to the project folder
@@ -156,9 +168,9 @@ npx @tailwindcss/cli -i input.css -o output.css --watch
 ## ⭐ Progress
 
 - [ ] Phase 1 – JavaScript Fundamentals
-- [ ] Phase 2 – DOM Manipulation
-- [ ] Phase 3 – Advanced JavaScript
-- [ ] Phase 4 – ES6+
+- [ ] Phase 2 – Control-Flow-and-Functions
+- [ ] Phase 3 – Array
+- [ ] Phase 4 – Objects-and-DOM
 - [ ] Phase 5 – Projects
 - [ ] Phase 6 – Interview Preparation
 
