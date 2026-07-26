@@ -6,3 +6,9 @@ btn1.addEventListener("click",()=>{
     document.getElementById("heading1").textContent="Heading1 get changed"
     document.getElementById("para1").innerHTML="The paragraph also get changed"
 })
+
+let tog=document.getElementById("toggle")
+let body=document.getElementById("body")
+tog.addEventListener(('click'),()=>{
+    body.classList.toggle("dark")
+})

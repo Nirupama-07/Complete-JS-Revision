@@ -6,9 +6,18 @@
     <title>Exercise-DOM</title>
     <link rel="stylesheet" href="output.css">
     <link rel="shortcut icon" href="images/js.png" type="image/x-icon">
+    <style>
+        .dark{
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
-<body>
+<body id="body">
     <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript DOM Exercise</h1>
+    <div>
+        <h1 id="toggle">Click here for toggle</h1>
+    </div>
     <div class="mt-10 ml-16 mr-12 ">
         
         <div class="flex gap-20">
@@ -43,6 +52,11 @@
                &nbsp; document.getElementById("heading1").textContent="Heading1 get changed"      <br>
                &nbsp; document.getElementById("para1").innerHTML="The paragraph also get changed"     <br>
             })      <br>
+            let tog=document.getElementById("toggle")   <br>
+            let body=document.getElementById("body")    <br>
+            tog.addEventListener(('click'),()=>{    <br>
+                &nbsp; body.classList.toggle("dark")    <br>
+            })  <br>
         </div>
 
         <a href="dom.html" class="pt-28 text-lg font-bold pl-20 text-blue-700 hover:cursor-pointer">🡸 Go to DOM page</a>
