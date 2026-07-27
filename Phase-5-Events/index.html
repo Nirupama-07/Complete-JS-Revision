@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase-5 Events</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" href="./images/js.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript Events</h1>
+
+    <div class="flex-2 mt-10 pl-9 mr-6">
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(1)What is Event?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:JS events are actions or occurences that are happen in the browser. They can be triggered by various user interaction or by the browser itself. </p>
+            <p class="pl-5 font-bold">Actions like: <br>
+            <ul class="pl-5 pt-3">
+                <li class="pb-2">User clicking on a button</li>
+                <li class="pb-2">User submitting a form</li>
+                <li class="pb-2">User types an input</li>
+                <li class="pb-2">User scrolls the page</li>
+            </ul>
+            e.g.  const btn = document.getElementById("btn");   <br>
+
+                    btn.addEventListener("click", function () { <br>
+                        &nbsp; alert("Button clicked");    <br>
+                    }); <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(2)What is addEventListener()?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:addEventListener() is a function which listens for events(such as click,mouseover,keydown,etc.) on that elements and executes a function when the event occurs. </p>
+            <p class="pl-5 font-bold">e.g.  const btn = document.getElementById("btn");   <br>
+
+                    btn.addEventListener("click", function () { <br>
+                        &nbsp; alert("Button clicked");    <br>
+                    }); <br>
+            </p>
+        </div>
+
+         <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(3)What is removeEventListener()?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:It is a built in function that is used to remove an event handler that was previously added using addEventListener(). </p>
+            <p class="pl-5 font-bold">e.g.  <br>
+                const btn1=document.getElementById("btn1")  <br>
+                const btn2=document.getElementById("btn2")  <br>
+
+                function sayHi(){   <br>
+                    &nbsp; alert("Hi Welcome") <br>
+                }   <br>
+
+                btn1.addEventListener('click',sayHi)    <br>
+
+                btn2.addEventListener('click',()=>{ <br>
+                    &nbsp; btn1.removeEventListener('click',sayHi) <br>
+                })  <br>
+            </p>
+        </div>
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(4)What is click Event?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:It gets triggered when an element is clicked. </p>
+            <p class="pl-5 font-bold">It can be click or dblclick:  <br> </p>
+            <p class="pl-5 ">
+                const btn3=document.getElementById("btn3")  <br>
+                const btn4=document.getElementById("btn4")  <br>
+
+                btn3.addEventListener('click',()=>{ <br>
+                    &nbsp; alert("Works on click") <br>
+                })  <br>
+
+                btn4.addEventListener('dblclick',()=>{  <br>
+                    &nbsp; alert("Works on double click")  <br>
+                })  <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(5)What are some mouseEvents?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:Some of the mouse events are: </p>
+            <p class="pl-5 font-bold">mouseOver():gets triggered when a mouse pointer moves over it. <br>
+                mouseout():gets triggered when a mouse pointer moves out of the specified element. <br> </p>
+            <p class="pl-5 pt-2">
+                    const heading1=document.getElementById("heading1")      <br>
+
+                    heading1.addEventListener('mouseover',()=>{     <br>
+                        &nbsp; heading1.style.backgroundColor="pink"       <br>
+                    })      <br>
+                    heading1.addEventListener('mouseout',()=>{      <br>
+                        &nbsp; heading1.style.backgroundColor="red"        <br>
+                    })      <br>
+            </p> 
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(6)What are some keyEvents?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:Some of the key events are: </p>
+            <p class="pl-5 font-bold">keydown():gets triggered when a key is pressed. <br>
+                keyup():gets triggered when a key is released. <br> </p>
+            <p class="pl-5 pt-2">
+                text.addEventListener('keydown',(e)=>{  <br>
+                    &nbsp; console.log(e.target.value) <br>
+                })  <br>
+                text.addEventListener('keyup',(e)=>{    <br>
+                    &nbsp; console.log(e.target.value) <br>
+                })  <br>
+                <br>
+            </p> 
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(7)What are some formEvents?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:Some of the key events are: </p>
+            <p class="pl-5 font-bold">submit():gets triggered when form submit button is clicked. <br>
+                input():gets triggered everytime the value changes <br> </p>
+                change():gets triggered everytime the value changes and looses focus(e.g. dropdown,checkboxes,date pickers) <br> </p>
+                focus():when an input gets focus <br> </p>
+                blur():when an input looses focus <br> </p>
+                reset():when the form is reset<br> </p>
+                invalid():when a form field fails html validation<br> </p>
+            <p class="pl-5 pt-2">
+                
+                const form=document.getElementById("form")  <br>
+                form.addEventListener('submit',(event)=>{   <br>
+                    &nbsp; event.preventDefault()  <br>
+                    &nbsp; console.log("Form submitted")   <br>
+                })  <br>
+                form.addEventListener('reset',(event)=>{    <br>
+                    &nbsp; console.log("Form reset")   <br>
+                })  <br>
+                const name=document.getElementById("name")  <br>
+                name.addEventListener('input',()=>{ <br>
+                    &nbsp; console.log(name.value) <br>
+                })  <br>
+                name.addEventListener('focus',()=>{ <br>
+                    &nbsp; console.log("input focused")    <br>
+                })  <br>
+                name.addEventListener('blur',()=>{  <br>
+                    &nbsp; console.log("input loose focus")    <br>
+                })  <br>
+                const subject=document.getElementById("subject")    <br>
+                subject.addEventListener('change',()=>{ <br>
+                    &nbsp; console.log(subject.value)  <br>
+                })  <br>
+                const email=document.getElementById("email")    <br>
+                email.addEventListener('invalid',()=>{  <br>
+                    &nbsp; console.log("Email is not valid")   <br>
+                })  <br>
+            </p> 
+        </div>
+
+         <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(8)What are event objects?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:When an event occurs javascript automatically creates an object called event. </p>
+            <p class="pl-5 font-bold">Some useful properties: <br>
+                event.target(): which element triggered the event <br>
+                event.type(): return the type of event which get triggered <br>
+                event.preventDefault(): stop the browsers default behaviour <br>
+                event.stopPropagation():stop event bubbling <br>
+                event.key():returns the pressed key <br>
+                event.code():returns the physical key on the board <br>
+                event.clientX():returns the mouse X coordinate inside the browser window <br>
+                event.clientY():returns the mouse Y coordinate inside the browser window <br>
+             </p>
+            
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(9)What is DOMContentLoaded?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:DOMContentLoaded fired when the html content has been completely loaded and parsed.</p>
+            <p class="pl-5 font-bold">It does not wait for: </p>
+            <ul class="pl-5 pt-3">
+                <li class="pb-2">Images</li>
+                <li class="pb-2">Videos</li>
+                <li class="pb-2">CSS Background images</li>
+                <li class="pb-2">Large files</li>
+            </ul>
+            <p class="pl-5 pt-2">
+                document.addEventListener("DOMContentLoaded", () => {   <br>
+                    &nbsp; const btn = document.getElementById("btn"); <br>
+                    &nbsp; console.log(btn);   <br>
+                }); <br>
+                <br>
+            </p> 
+        </div>
+        
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(10)What is load?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:The load event occurs when the entire page has finished loading. </p>
+            <p class="pl-5 font-bold">This includes: </p>
+            <ul class="pl-5 pt-3">
+                <li class="pb-2">HTML</li>
+                <li class="pb-2">Images</li>
+                <li class="pb-2">Videos</li>
+                <li class="pb-2">CSS Background images</li>
+                <li class="pb-2">Large files</li>
+                <li class="pb-2">Fonts</li>
+                <li class="pb-2">Scripts</li>
+                <li class="pb-2">Iframes</li>
+            </ul>
+            <p class="pl-5 pt-2">
+                window.addEventListener("load", () => {
+                    &nbsp; console.log("Everything Loaded");
+                });
+                <br>
+            </p> 
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(11)What is scroll?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:It runs when the page is scrolled. </p>
+            
+            <p class="pl-5 pt-2">
+                window.addEventListener("scroll", () => {
+                    &nbsp; console.log("Scrolling.....");
+                });
+            </p> 
+                <br>
+                <p class="text-2xl font-bold text-black pl-5">Sticky navbar</p>
+                <p class="pl-5">
+                    window.addEventListener("scroll", () => { <br>
+                    if(window.scrollY > 100){ <br>
+                        &nbsp; navbar.classList.add("sticky"); <br>
+                    } <br>
+
+                }); 
+                </p>
+                
+                <p class="text-2xl font-bold text-black pl-5">Show back to top</p>
+                <p class="pl-5">
+                    if(window.scrollY > 500){ <br>
+                        &nbsp; topButton.style.display = "block"; <br>
+                    }
+                </p>
+                
+            
+        </div>
+        
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(12)What is Event Bubbling?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:It is a mechanism where an event gets triggered on a child element it propagates upward through its ancestors in the DOM. It can be stop by event.stopPropagation() </p>
+            
+            <p class="pl-5 pt-2">
+               parent.addEventListener("click", () => { <br>
+                    &nbsp; console.log("Parent");   <br>
+                }); <br>
+
+                child.addEventListener("click", () => { <br>
+                    &nbsp; console.log("Child");    <br>
+                }); <br>
+                <br>
+                
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(13)What is Event Capturing?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:It is a mechanism where an event gets triggered when it moves from parent to child before bubbling. </p>
+            
+            <p class="pl-5 pt-2">
+               parent.addEventListener("click", () => { <br>
+                    &nbsp; console.log("Parent");   <br>
+                },true); <br>
+
+                child.addEventListener("click", () => { <br>
+                    &nbsp; console.log("Child");    <br>
+                }); <br>
+                <br>
+                
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(14)What is Event Delegation?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:It is a mechanism where instead of adding listeners to every child element add one listener to the parent. </p>
+            
+            <p class="pl-5 pt-2">
+               const list = document.getElementById("list");    <br>
+                list.addEventListener("click", function(event){ <br>
+                    &nbsp; console.log(event.target.textContent);  <br>
+                }); <br>
+                
+            </p>
+        </div>
+        
+    </div>
+
+    <div class="flex justify-between ">
+        <div
+            class="pl-16 bg-blue-800 text-white mt-20 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
+            <h1 class="text-3xl font-bold">Practice Questions</h1>
+            <div class="mt-5 pl-12 pb-10 leading-11">
+
+                
+                <h2 class="font-semibold text-lg pt-3 pl-5">1.counter</h2>
+                <h2 class="font-semibold text-lg pt-3 pl-5">2.TODO App</h2>
+                <h2 class="font-semibold text-lg pt-3 pl-5">3.Dark mode</h2>
+                <h2 class="font-semibold text-lg pt-3 pl-5">4.Image slider</h2>
+                <h2 class="font-semibold text-lg pt-3 pl-5">5.Accordian</h2>
+                <h2 class="font-semibold text-lg pt-3 pl-5">6.Form validation</h2>
+
+
+            </div>
+            <!-- <a href="domExercise.html" class="pt-28 text-lg font-bold pl-20 text-white hover:cursor-pointer">Go to Exercise 🡺</a> -->
+
+        </div>
+
+        <div
+            class="pl-16 bg-blue-800 text-white mt-20 mr-28 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
+            <h1 class="text-3xl font-bold">Interview Questions</h1>
+            <div class="mt-5 pl-3 pt-2 pb-4">
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">1.Event Bubbling</h2>
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">2.Event Capturing</h2>
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">3.Event Delegation</h2>
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">4.eventListener</h2>
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">5.preventDefault() vs stopPropagation()</h2>
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">6.What are the three phases of event propagation? Ans: 1.capturing phase 2.target phase 3.bubbling phase</h2>
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="text-center bg-blue-950 text-white text-2xl font-semibold mt-10 pt-3 pb-2">
+        &copy; Nirupama Majhi 2026 
+    </footer>
+</body>
+</html>
+
