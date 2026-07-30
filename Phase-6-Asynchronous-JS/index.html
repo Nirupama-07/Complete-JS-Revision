@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase-5 Events</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" href="./images/js.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript Events</h1>
+
+    <div class="flex-2 mt-10 pl-9 mr-6">
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(1)What is the difference between synchronous and asynchronous
+                javascript?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer: </p>
+            <p class="pl-5 font-bold"><b class="text-green-600">Synchronous:</b>Javascript is a single threaded which
+                means one statement executes at
+                a time. By default, JS is synchronous which means the next line should wait until the previous line
+                finish execution.e.g.<br>
+            <ul class="pl-5 pt-3">
+                <li class="pb-2">console.log("Hi)</li>
+                <li class="pb-2">console.log("I am good")</li>
+            </ul>
+            </p>
+            <p class="pl-5 font-bold"><b class="text-green-600">Asynchronous:</b>It lets slow work begin without
+                blocking the rest of the program.Its
+                result is handled later by using callbacks,promises,async and await.e.g.<br>
+            <ul class="pl-5 pt-3">
+                <li class="pb-2">console.log("Hi)</li>
+                <li class="pb-2">setTimeout(()=>{ <br>
+                    &nbsp;console.log("I am good") <br>
+                    },2000)</li> <br>
+            </ul>
+            </p>
+        </div>
+
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(2)Why is js asynchronous even it is single threaded?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:JS itself is single threaded. The asynchronous behaviour comes
+                from the <b class="text-red-500">Javascript runtime</b> which consists of: </p>
+            <ul class="pl-5 pt-3">
+                <li class="pb-2 list-disc">Javascript Engine</li>
+                <li class="pb-2 list-disc">Web APIs</li>
+                <li class="pb-2 list-disc">Callback queue</li>
+                <li class="pb-2 list-disc">Microtask queue</li>
+                <li class="pb-2 list-disc">Event Loop</li>
+
+            </ul>
+            <p class="font-medium mt-4 pb-1 pl-5">The browser provides Web API like: </p>
+            <ul class="pl-5 pt-3">
+                <li class="pb-2 list-disc">setTimeout</li>
+                <li class="pb-2 list-disc">fetch</li>
+                <li class="pb-2 list-disc">DOM events</li>
+                <li class="pb-2 list-disc">Geolocation</li>
+                <li class="pb-2 list-disc">File API</li>
+
+            </ul>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(3)What is callstack?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:A callstack is a data strucutre that stores function execution.
+                When a function is called JS put it at the top of the task.When the task finish executing it removes the
+                task.This keeps track of which function is currently running and where execution should return
+                afterward. </p>
+            <p class="pl-5">e.g. function one() { <br>
+                &nbsp; two(); <br>
+                } <br>
+
+                function two() { <br>
+                &nbsp; three(); <br>
+                } <br>
+
+                function three() { <br>
+                &nbsp; console.log("Hello"); <br>
+                } <br>
+
+                one(); <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(4)What is callback queue(task queue)?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:A callback queue stores completed asynchronous callbacks until
+                the callstack is empty. </p>
+            <p class="pl-5">e.g.
+                console.log("Start"); <br>
+
+                setTimeout(() => { <br>
+                &nbsp; console.log("Timer done"); <br>
+                }, 0); <br>
+
+                console.log("End"); <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(5)What is microtask queue?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:A microtask queue is a high priority queue with small follow up
+                async work- mainly promise handlers and async/await continuations. </p>
+            <p class="pl-5">e.g.
+                console.log(1); <br>
+
+                Promise.resolve().then(() => { <br>
+                &nbsp; console.log(2); <br>
+                }); <br>
+
+                console.log(3); <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(6)What is event loop?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:An event loop is a mechanism which continuosly checks : </p>
+            <p class="pl-5">
+            <ul class="pl-5 pt-3">
+                <li class="pb-2 list-disc">whether callstack is empty?</li>
+                <li class="pb-2 list-disc">execute all Microtasks</li>
+                <li class="pb-2 list-disc">execute one callback queue task</li>
+                <li class="pb-2 list-disc">Repeat</li>
+            </ul>
+            </p>
+            <p class="pl-5"> <b>Priority order: </b> <br>
+                Call Stack <br>
+
+                &nbsp; ↓ <br>
+
+                Microtask Queue <br>
+
+                &nbsp; ↓ <br>
+
+                Callback Queue <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(7)What is callback function?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:A callback function is a function which is passed as an
+                argument to the other function and is executed later.</p>
+            <p class="pl-5">e.g. <br>
+                function greet(name, callback) { <br>
+                &nbsp; console.log("Hello " + name); <br>
+                &nbsp; callback(); <br>
+                } <br>
+
+                greet("John", function () { <br>
+                &nbsp; console.log("Finished"); <br>
+                }); <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(8)What is callback hell?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:When the callback are nested deeply, the code becomes
+                unreadable and hard to maintain.This situation is called callback hell.</p>
+            <p class="pl-5">
+                login(function () { <br>
+                &nbsp; getUser(function () { <br>
+                &nbsp; &nbsp; getPosts(function () { <br>
+                &nbsp; &nbsp; &nbsp; getComments(function () { <br>
+
+                &nbsp; &nbsp; &nbsp; }); <br>
+                &nbsp; &nbsp; }); <br>
+                &nbsp; }); <br>
+                }); <br>
+            </p>
+        </div>
+
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(9)What is promises?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:Promise make handling asynchronous operations like API Calls,
+                file handlings or time delays easier. It can be of 3 states: pending,fulfilled or rejected</p>
+            <p class="pl-5">
+                const promise = new Promise((resolve, reject) => { <br>
+
+                &nbsp; let success = true; <br>
+
+                &nbsp; if (success) <br>
+                &nbsp; &nbsp;resolve("Success"); <br>
+                &nbsp; else <br>
+                &nbsp; &nbsp;reject("Failed"); <br>
+
+                });
+            </p>
+        </div>
+
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(10)Explain .then(),.cath() and .finally()</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:.then(),.catch() and .finally() are the methods which are used
+                in promise.</p>
+            <p class="pl-5">
+                <b>.then:</b>It runs when the promise succeeds.It receives the result
+                <b>.catch:</b>It runs when thepromise fails.It receives the error
+                <b>.finally:</b>It runs whether the promise succeeds or fails. use it for cleanup such as hiding a
+                loading spinner.
+                promise <br>
+                &nbsp; .then(result => console.log(result)) <br>
+                &nbsp; .catch(error => console.log(error)) <br>
+                &nbsp; .finally(() => console.log("Always runs")); <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(11)What is promise chaining?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:Promise chaninig allows you to execute a sequence of
+                asynchronous operations in sequence. Each .then() returns a new promise, allowing further chaning. Error
+                handling is easier with a single .catch() for the entire chain.</p>
+            <p class="pl-5">
+                fetch(url) <br>
+                &nbsp; .then(res => res.json()) <br>
+                &nbsp; .then(data => console.log(data)) <br>
+                &nbsp; .catch(err => console.log(err)); <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(12)What are promise methods?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer: <b class="text-green-600"> promise.all():</b>It returns a
+                single promise that if resolves all
+                then success is returned or fails if any one promise rejects.</p>
+            <p class="pl-5">
+                const promise1=new Promise((resolve, reject) => {
+                &nbsp; setTimeout(()=>{ <br>
+                &nbsp; &nbsp;resolve(1) <br>
+                &nbsp; },1000) <br>
+                }) <br>
+                const promise2=new Promise((resolve, reject) => { <br>
+                &nbsp; setTimeout(()=>{ <br>
+                &nbsp; &nbsp;reject("fails") <br>
+                &nbsp; },2000) <br>
+                }) <br>
+                const promise3=new Promise((resolve, reject) => { <br>
+                &nbsp; setTimeout(()=>{ <br>
+                &nbsp; &nbsp;resolve(3) <br>
+                &nbsp; },3000) <br>
+                }) <br>
+
+                Promise.all([promise1,promise2,promise3]) <br>
+                &nbsp; .then((results)=>{ <br>
+                &nbsp; &nbsp;console.log(results) <br>
+                }) <br>
+                &nbsp; .catch((error)=>{ <br>
+                &nbsp; &nbsp;console.log("error:",error) <br>
+                &nbsp; }) <br>
+            </p>
+
+            <p class="font-medium mt-4 pb-1 pl-5"><b class="text-green-600">promise.allSettled():</b>It waits for all
+                promises to settled and returns the result whether succeed or fails.</p>
+            <p class="pl-5">
+                Promise.allSettled([promise1,promise2,promise3]) <br>
+                &nbsp;.then((results)=>{ <br>
+                &nbsp; &nbsp;console.log(results) <br>
+                &nbsp;}) <br>
+                &nbsp;.catch((error)=>{ <br>
+                &nbsp; &nbsp;console.log("error:",error) <br>
+                &nbsp; }) <br>
+            </p>
+
+            <p class="font-medium mt-4 pb-1 pl-5"><b class="text-green-600">promise.race():</b>It returns a promise that
+                fulfills or rejects.As soon as one of the promise in an iterable fulfills or rejects,it returns with the
+                value or reason from that promise.</p>
+            <p class="pl-5">
+                Promise.race([promise1,promise2,promise3]) <br>
+                &nbsp; .then((results)=>{ <br>
+                &nbsp; &nbsp; console.log(results) <br>
+                &nbsp; }) <br>
+                &nbsp; .catch((error)=>{ <br>
+                &nbsp; &nbsp; console.log(error) <br>
+                &nbsp; }) <br>
+            </p>
+
+            <p class="font-medium mt-4 pb-1 pl-5"><b class="text-green-600">promise.any():</b>It returns the first
+                fulfilled promise and ignore the reject ones. Rejects only if all fails.</p>
+            <p class="pl-5">
+                Promise.any([promise1,promise2,promise3]) <br>
+                &nbsp; .then((results)=>{ <br>
+                &nbsp; &nbsp; console.log(results) <br>
+                &nbsp; }) <br>
+                &nbsp; .catch((error)=>{ <br>
+                &nbsp; &nbsp; console.log(error) <br>
+                &nbsp; }) <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(12)What is async/await?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:It allows to write asynchronous code in a clean,synchronus like
+                manner, making it easier to read,understand and maintain while working with promises.</p>
+            <p class="pl-5">
+                async function getUsers() { <br>
+
+                &nbsp; const response = await fetch(url); <br>
+
+                &nbsp; const data = await response.json(); <br>
+
+                &nbsp; console.log(data); <br>
+
+                }
+            </p>
+            <p class="pl-5">by using try...catch</p>
+            <p class="pl-5">
+                async function getData() { <br>
+
+                &nbsp;try { <br>
+
+                &nbsp; &nbsp;const res = await fetch(url); <br>
+
+                &nbsp; &nbsp;const data = await res.json(); <br>
+
+                &nbsp; &nbsp;console.log(data); <br>
+
+                &nbsp;} catch (error) { <br>
+
+                &nbsp; &nbsp;console.log(error); <br>
+
+                &nbsp;} <br>
+
+                }
+            </p>
+        </div>
+
+
+    </div>
+
+    <div class="flex justify-between ">
+        <div
+            class="pl-16 bg-blue-800 text-white mt-20 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
+            <h1 class="text-3xl font-bold">Practice Questions</h1>
+            <div class="mt-5 pl-12 pb-10 leading-11">
+
+
+                <h2 class="font-semibold text-lg pt-3 pl-5">1.Basic callback</h2>
+                <p class="font-semibold text-sm pt-3 pl-5">Task: <br> 
+                    Create a function greet(name, callback). <br> 
+                    Requirements: <br> 
+                    Print "Hello Nirupama" <br> 
+                    After that, call the callback. <br> 
+                    The callback should print "Welcome to JavaScript". <br> </p>
+                <h2 class="font-semibold text-lg pt-3 pl-5">2.TODO App</h2>
+                <h2 class="font-semibold text-lg pt-3 pl-5">3.Dark mode</h2>
+                <h2 class="font-semibold text-lg pt-3 pl-5">4.Image slider</h2>
+                <h2 class="font-semibold text-lg pt-3 pl-5">5.Accordian</h2>
+                <h2 class="font-semibold text-lg pt-3 pl-5">6.Form validation</h2>
+
+
+            </div>
+            <a href="domExercise.html" class="pt-28 text-lg font-bold pl-20 text-white hover:cursor-pointer">Go to Exercise 🡺</a>
+
+        </div>
+
+        <div
+            class="pl-16 bg-blue-800 text-white mt-20 mr-28 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
+            <h1 class="text-3xl font-bold">Interview Questions</h1>
+            <div class="mt-5 pl-3 pt-2 pb-4">
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">1.Event Bubbling</h2>
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">2.Event Capturing</h2>
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">3.Event Delegation</h2>
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">4.eventListener</h2>
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">5.preventDefault() vs stopPropagation()</h2>
+                <h2 class="font-semibold text-lg pt-2 text-blue-50">6.What are the three phases of event propagation?
+                    Ans: 1.capturing phase 2.target phase 3.bubbling phase</h2>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
