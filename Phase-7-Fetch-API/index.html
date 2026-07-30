@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase-5 Events</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" href="images/js.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript Fetch API</h1>
+
+    <div class="flex-2 mt-10 pl-9 mr-6">
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(1)fetch API?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:Fetch API is a modern js interface used to make http
+                request(such as GET,PUT,POST,Patch and delete) to the server.It allows your application to read and
+                receive data asynchronously without relaoding the webpage. </p>
+
+            <p class="pl-5 font-semibold">syntax: fetch(url,options)</p>
+            <p class="pl-5 pt-2">url:the endpoint where the request is sent. <br>
+                e.g fetch("https://jsonplaceholder.typicode.com/users");
+            </p>
+            <p class="pl-5 pt-2">options:an object that specifies how the request should be made. <br>
+                fetch(url, { <br>
+                &nbsp; method: "POST", <br>
+                &nbsp; headers: { <br>
+                &nbsp; &nbsp;"Content-Type": "application/json" <br>
+                &nbsp; }, <br>
+                &nbsp;body: JSON.stringify(data) <br>
+                });
+            </p>
+        </div>
+
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(2)Write a basic GET request</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:   <br>
+                fetch("https://jsonplaceholder.typicode.com/users") <br>
+                &nbsp; .then(response => response.json())  <br>
+                &nbsp; .then(data => { <br>
+                &nbsp; &nbsp; console.log(data);  <br>
+                &nbsp; })  <br>
+                &nbsp; .catch(error => {   <br>
+                &nbsp; &nbsp; console.log(error); <br>
+                &nbsp;}); 
+            </p>
+        </div>
+
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(3)Why response.json() is used?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">Answer:The promise resolves into an response object.The response bosy is still a stream of data not a js object. response.json reads the body and convert it to js object <br>
+                fetch("https://jsonplaceholder.typicode.com/users") <br>
+                &nbsp; .then(response => response.json())  <br>
+                &nbsp; .then(data => { <br>
+                &nbsp; &nbsp; console.log(data);  <br>
+                &nbsp; })  <br>
+                &nbsp; .catch(error => {   <br>
+                &nbsp; &nbsp; console.log(error); <br>
+                &nbsp;}); 
+            </p>
+        </div>
+
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(4)What is JSON?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                JSON is widely used,lightweight data format reqpresenting strucutured data
+                <br>
+                fetch("https://jsonplaceholder.typicode.com/users") <br>
+                &nbsp; .then(response => response.json())  <br>
+                &nbsp; .then(data => { <br>
+                &nbsp; &nbsp; console.log(data);  <br>
+                &nbsp; })  <br>
+                &nbsp; .catch(error => {   <br>
+                &nbsp; &nbsp; console.log(error); <br>
+                &nbsp;}); 
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(5)What is JSON.stringify() and JSON.parse()?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                JSON.stringify: It is used to convert JSON objects into string before sending it to the server. <br>
+                JSON.parse: It is used to convert JSON strings which we received from the browser into JSO objects.  <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(6)What is localstorage?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                localStorage is a browser storage mechanism that stores data as key-value pairs with no expiration time. The data remains available even after the browser is closed and reopened, until it is explicitly removed.  <br>
+                <p class="pl-5">Methods are: <br>
+                <b>Set Item:</b> localstorage.setItem("name","Nirupama")
+                <b>Get Item:</b>const name= localstorage.getItem("name") <br>
+                console.log(name) <br>
+                <b>Remove one item:</b>localstorage.removeItem("name") <br>
+                <b>clear</b>:localstorage.clear() <br>
+                e.g.  <br>
+                const user={ <br>
+                    name:"Nirupama", <br>
+                    age:22 <br>
+                }
+                localstorage.setItem("user",JSON.stringify(user)) <br>
+                retrieve:- <br>
+                const data=JSON.parse(localstorage.getItem("user")) <br>
+                console.log(data.name) <br>
+                </p>
+            </p>
+        </div>
+
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(7)What is sessionstorage?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                sessionStorage stores data as key-value pairs for the duration of a single browser tab or window. The data is automatically removed when the tab or window is closed.<br>
+                <p class="pl-5">Methods are: <br>
+                <b>Set Item:</b> sessionstorage.setItem("name","Nirupama")
+                <b>Get Item:</b>const name= sessionstorage.getItem("name") <br>
+                console.log(name) <br>
+                <b>Remove one item:</b>sessionstorage.removeItem("name") <br>
+                <b>clear</b>:sessionstorage.clear() <br>
+                e.g.  <br>
+                const user={ <br>
+                    name:"Nirupama", <br>
+                    age:22 <br>
+                }
+                sessionstorage.setItem("user",JSON.stringify(user)) <br>
+                retrieve:- <br>
+                const data=JSON.parse(sessionstorage.getItem("user")) <br>
+                console.log(data.name) <br>
+                </p>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(8)What are cookies?</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                Cookies are small pieces of data stored by the browser that are automatically sent to the server with every HTTP request to the same domain.<br>
+            </p>
+        </div>
+
+    </div>
+    <footer class="text-center bg-blue-950 text-white text-2xl font-semibold mt-10 pt-3 pb-2">
+        &copy; Nirupama Majhi 2026 
+    </footer>
+</body>
+
+</html>
