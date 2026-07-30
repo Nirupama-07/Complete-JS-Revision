@@ -152,7 +152,7 @@ Promise.race([promise1,promise2,promise3])
     .then((data)=>console.log(data))*/
 
 //promise.race
-const promise1=new Promise((resolve, reject) => {
+/*const promise1=new Promise((resolve, reject) => {
     setTimeout(()=>{
         reject("Promise 1")
     },3000)
@@ -168,4 +168,69 @@ const promise3=new Promise((resolve, reject) => {
     },1000)
 })
 Promise.any([promise1,promise2,promise3])
-    .then((data)=>console.log(data))
+    .then((data)=>console.log(data))*/
+
+//async/await
+/*function greet() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Hi");
+        }, 2000);
+    });
+}
+
+async function main() {
+    const message = await greet();
+    console.log(message);
+}
+
+main();*/
+
+/*function wait(){
+    setTimeout(()=>{
+        console.log("wait...")
+        console.log("Done")
+    },3000)
+}
+async function main() {
+    const message=await wait()
+    
+}
+main()*/
+
+//online food order
+function placeOrder(){
+    return new Promise((resolve, reject) => {
+        setTimeout(()=>{
+            resolve("order placed")
+        },2000)
+    })
+}
+
+function preparingFood(){
+    return new Promise((resolve, reject) => {
+            setTimeout(()=>{
+            resolve("Preparing food")
+        },2000)
+    })
+}
+
+function foodDelivered(){
+    return new Promise((resolve, reject) => {
+        setTimeout(()=>{
+            resolve("Food Delivered")
+        },2000)
+    })
+}
+
+async function main() {
+    const message=await placeOrder()
+    console.log(message)
+
+    const message2=await preparingFood()
+    console.log(message2)
+
+    const message3=await foodDelivered()
+    console.log(message3)
+}
+main()

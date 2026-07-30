@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercise-Object</title>
+    <link rel="shortcut icon" href="./images/js.png" type="image/x-icon">
+    <link rel="stylesheet" href="output.css">
 </head>
+
 <body>
-    <script src="exercise.js"></script>
-</body>
-</html>
+    <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript Asynchronous Exercise
+    </h1>
+
+    <div class="flex-2 mt-10 pl-9 mr-6">
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+
+            <p class="font-medium mt-4 pb-1 pl-5">1.Answer:basic callback</p>
+            <p class="pl-5 "><br>
+                function greet(name,callback){ <br>
+                &nbsp; console.log("Hi ",name) <br>
+                &nbsp; callback(); <br>
+                } <br>
+                function js(){ <br>
+                &nbsp; console.log("Welcome to JS") <br>
+                } <br>
+                greet("Nirupama",js)<br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+
+            <p class="font-medium pl-5">2.Answer:simulate a delay</p>
+            <p class="pl-5 "><br>
+                console.log("Loading...") <br>
+                setTimeout(()=>{ <br>
+                &nbsp; console.log("Data loaded") <br>
+                },3000)<br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+
+            <p class="font-medium pl-5">3.Answer:countdown timer</p>
+            <p class="pl-5 "><br>
+                let num=5 <br>
+                let timer=setInterval(()=>{ <br>
+                &nbsp; if(num<=5){ <br>
+                    &nbsp; &nbsp; console.log(num) <br>
+                    &nbsp; &nbsp; if(num==1) <br>
+                    &nbsp; &nbsp; &nbsp;clearInterval(timer) <br>
+                    &nbsp; &nbsp; num-- <br>
+                    &nbsp; } <br>
+
+                    },1000)<br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+
+            <p class="font-medium pl-5">4.Answer:promise basics</p>
+            <p class="pl-5 "><br>
+                let marks=5 <br>
+                let promise=new Promise((resolve, reject) => {  <br>
+                &nbsp; &nbsp; if(marks>40){   <br>
+                &nbsp; &nbsp; &nbsp;resolve("passed")   <br>
+                
+                &nbsp; &nbsp;}else{  <br>
+                &nbsp; &nbsp; &nbsp;reject("Failed")    <br>
+                   
+                &nbsp; &nbsp;}   <br>
+                &nbsp; })  <br>
+                promise <br>
+                &nbsp;.then((result)=>console.log(result))    <br>
+                &nbsp; .catch((error)=>console.log(error))<br>
+            </p>
+
+            <p class="font-medium pl-5">4.Answer:promise basics</p>
+            <p class="pl-5 "><br>
+                let marks=5 <br>
+                let promise=new Promise((resolve, reject) => {  <br>
+                &nbsp; &nbsp; if(marks>40){   <br>
+                &nbsp; &nbsp; &nbsp;resolve("passed")   <br>
+                
+                &nbsp; &nbsp;}else{  <br>
+                &nbsp; &nbsp; &nbsp;reject("Failed")    <br>
+                   
+                &nbsp; &nbsp;}   <br>
+                &nbsp; })  <br>
+                promise <br>
+                &nbsp;.then((result)=>console.log(result))    <br>
+                &nbsp; .catch((error)=>console.log(error))<br>
+            </p>
+        </div>
