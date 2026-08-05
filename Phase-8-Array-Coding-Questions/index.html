@@ -1,35 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Array Coding Questions</title>
     <link rel="stylesheet" href="output.css">
 </head>
+
 <body>
-    <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript Array Coding Questions</h1>
+    <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript Array Coding Questions
+    </h1>
 
     <div class="flex-2 mt-10 pl-9 mr-6">
         <div
             class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
             <h1 class="font-bold text-xl pl-5">Q(1)Find the largest element in the array</h1>
-            <p class="font-medium mt-4 pb-1 pl-5"> </p>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                const arr=[10,20,30,70,40,25,45,60] <br>
 
-            <p class="pl-5 font-semibold">syntax: fetch(url,options)</p>
-            <p class="pl-5 pt-2">url:the endpoint where the request is sent. <br>
-                e.g fetch("https://jsonplaceholder.typicode.com/users");
-            </p>
-            <p class="pl-5 pt-2">options:an object that specifies how the request should be made. <br>
-                fetch(url, { <br>
-                &nbsp; method: "POST", <br>
-                &nbsp; headers: { <br>
-                &nbsp; &nbsp;"Content-Type": "application/json" <br>
-                &nbsp; }, <br>
-                &nbsp;body: JSON.stringify(data) <br>
-                });
+                let largest=arr[0]  <br>
+
+                for(let num of arr){    <br>
+                &nbsp; if(num>largest){ <br>
+                &nbsp; &nbsp;largest=num  <br>
+                &nbsp; }   <br>
+                }   <br>
+                console.log(largest)
             </p>
         </div>
 
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(2)Find the second largest element in the array</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function secondLargest(arr){    <br>
+                    &nbsp; if(arr.length<2){   <br>
+                        &nbsp; &nbsp; return null <br>
+                    &nbsp; }   <br>
+                    &nbsp; let largest=-Infinity   <br>
+                    &nbsp; let secondLargest=-Infinity <br>
+
+                    &nbsp; for(let num of arr){    <br>
+                        &nbsp; &nbsp; if(num>largest){    <br>
+                            &nbsp; &nbsp; &nbsp; secondLargest=largest   <br>
+                            &nbsp; &nbsp; &nbsp; largest=num <br>
+                        &nbsp; &nbsp;}else if(num>secondLargest && num!==largest){   <br>
+                            &nbsp; &nbsp; &nbsp; secondLargest=num   <br>
+                        &nbsp; &nbsp;}   <br>
+                    &nbsp;}   <br>
+                    &nbsp;return secondLargest===-Infinity?null:secondLargest <br>
+
+                }   <br>
+                console.log(secondLargest([10,20,30,25,65,35,55]))  <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(3)Find the reverse of an array</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                const arr=[10,20,30,40] <br>
+
+                let reversed=[ ] <br>
+
+                for(let i=arr.length-1;i>=0;i--){   <br>
+                   &nbsp; reversed.push(arr[i]) <br>
+                }   <br>
+                console.log(reversed);  <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(4)Remove Duplicates</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                const arr=[10,20,30,23,54,10,23,30] <br>
+
+                let unique=[ ]   <br>
+
+                for(let num of arr){    <br>
+                    &nbsp; if(!unique.includes(num)){  <br>
+                        &nbsp; &nbsp; unique.push(num)    <br>
+                    &nbsp;}   <br>
+                }   <br>
+                console.log(unique);<br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(5)Missing Number</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                let num=[1,2,3,4,6] <br>
+
+                let n=num.length+1  <br>
+                let expectedSum=n*(n+1)/2   <br>
+
+                let actualSum=0 <br>
+                for(let ch of num){ <br>
+                    &nbsp; actualSum+=ch   <br>
+                }   <br>
+                console.log(expectedSum-actualSum)<br>
+            </p>
+        </div>
+
+
+    </div>
+
         <script src="script.js"></script>
 </body>
+
 </html>
