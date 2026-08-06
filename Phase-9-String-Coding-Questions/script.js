@@ -68,10 +68,54 @@ console.log(removeDuplicate("Helloo"));*/
 console.log(capitalize("i love js"));*/
 
 //longest word
-function longest(str){
+/*function longest(str){
     return str.split(" ").reduce((longest,current)=>current.length>longest.length?current:longest)
 }
-console.log(longest("i love javascript"));
+console.log(longest("i love javascript"));*/
+
+//count frequency
+/*function frequency(str){
+    let freq={}
+    for(let ch of str){
+        freq[ch]=(freq[ch] || 0)+1
+    }
+    return freq
+}
+console.log(frequency("hello"));*/
+
+//check anagram
+/*function anagram(str1,str2){
+    if(str1.length!==str2.length){
+        return false
+    }
+    let freq={}
+    for(let ch of str1){
+        freq[ch]=(freq[ch] || 0)+1
+    }
+    for(let ch of str2){
+        if(!freq[ch]){
+            return false
+        }
+        freq[ch]--
+    }
+    return true
+}
+console.log(anagram("silent","listen"));*/
+
+//first non-repeating characters
+function nonRepeat(str){
+    let freq={}
+    for(let ch of str){
+        freq[ch]=(freq[ch] || 0)+1
+    }
+    for(let ch of str){
+        if(freq[ch]===1){
+            return ch
+        }
+    }
+    return null
+}
+console.log(nonRepeat("helloh"));
 
 
 

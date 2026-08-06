@@ -119,7 +119,71 @@
                 console.log(longest("i love javasript")); <br>
             </p>
         </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(8)Count Frequency</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function frequency(str){    <br>
+                    &nbsp; let freq={} <br>
+                    &nbsp; for(let ch of str){ <br>
+                        &nbsp; &nbsp; freq[ch]=(freq[ch] || 0)+1  <br>
+                    &nbsp;}   <br>
+                    &nbsp;return freq <br>
+                }   <br>
+                console.log(frequency("hello")); <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(9)Check anagram</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function anagram(str1,str2){    <br>
+                    &nbsp; if(str1.length!==str2.length){   <br>
+                        return false    <br>
+                    &nbsp; }    <br>
+                    &nbsp; let freq={}  <br>
+                    &nbsp; for(let ch of str1){ <br>
+                        &nbsp; &nbsp; &nbsp;freq[ch]=(freq[ch] || 0)+1  <br>
+                    &nbsp; }    <br>
+                    &nbsp; for(let ch of str2){ <br>
+                        &nbsp; &nbsp; if(!freq[ch]){    <br>
+                            &nbsp; &nbsp; &nbsp; return false   <br>
+                        &nbsp; &nbsp;}  <br>
+                        &nbsp; &nbsp; freq[ch]--    <br>
+                    &nbsp; }    <br>
+                    &nbsp; return true  <br>
+                }   <br>
+                console.log(anagram("silent","listen")); <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(10)First non-repeating characters</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function nonRepeat(str){    <br>
+                    &nbsp; let freq={} <br>
+                    &nbsp;for(let ch of str){ <br>
+                        &nbsp; &nbsp;freq[ch]=(freq[ch] || 0)+1  <br>
+                    &nbsp;}   <br>
+                    &nbsp;for(let ch of str){ <br>
+                        &nbsp; &nbsp;if(freq[ch]===1){   <br>
+                            &nbsp; &nbsp; &nbsp;return ch   <br>
+                        &nbsp; &nbsp;}   <br>
+                    &nbsp;}   <br>
+                    &nbsp;return null <br>
+                }   <br>
+                console.log(nonRepeat("helloh"));<br>
+            </p>
+        </div>
+
     </div>
+
+    <footer class="text-center mt-10 bg-blue-950 text-white text-2xl font-semibold pt-3 pb-2">
+        &copy; Nirupama Majhi 2026 
+    </footer>
 
     <script src="script.js"></script>
 </body>
