@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS String coding questions</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript String Coding Questions
+    </h1>
+
+    <div class="flex-2 mt-10 pl-9 mr-6">
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(1)Reverse a string</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function reverse(str){  <br>
+                    &nbsp; let reversed="" <br>
+
+                    &nbsp; for(let i=str.length-1;i>=0;i--){   <br>
+                        &nbsp; &nbsp;reversed+=str[i]    <br>
+                    &nbsp; }   <br>
+                    &nbsp; return reversed <br>
+                }   <br>
+                console.log(reverse("Hello"))   <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(2)Check whether a string is palindrome or not</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function palindrome(str){   <br>
+                    &nbsp; let left=0  <br>
+                    &nbsp; let right=str.length-1  <br>
+
+                    &nbsp; while(left < right){  <br>
+                        &nbsp; &nbsp; if(str[left]!==str[right]){ <br>
+                            &nbsp; &nbsp; &nbsp; return false    <br>
+                        &nbsp; &nbsp; }   <br>
+                        &nbsp; &nbsp; left++  <br>
+                        &nbsp; &nbsp; right-- <br>
+                        &nbsp; &nbsp; return true <br>
+                    &nbsp; }   <br>
+                }   <br>
+                console.log(palindrome("hello"));
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(3)Count vowels</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function vowel(str){    <br>
+                    &nbsp; let vowles="aeiou"  <br>
+                    &nbsp; let count=0 <br>
+                    &nbsp; for(let ch of str.toLowerCase()){   <br>
+                        &nbsp; &nbsp;if(vowles.includes(ch)){    <br>
+                            &nbsp; &nbsp; &nbsp; count++ <br>
+                        &nbsp; &nbsp; }   <br>
+                        
+                    &nbsp;}   <br>
+                    &nbsp;return count    <br>
+                }   <br>
+                console.log(vowel("hello"));    <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(4)Count words</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function words(str){    <br>
+                    &nbsp;if(str.trim()===""){    <br>
+                       &nbsp; &nbsp; return 0    <br>
+                    &nbsp;}   <br>
+                    &nbsp;return str.trim().split(/\s+/).length   <br>
+                }   <br>
+                console.log(words("I love js and django"));    <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(5)Remove Duplicates</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function removeDuplicate(str){  <br>
+                    &nbsp;let unique="" <br>
+                    &nbsp;for(let ch of str){   <br>
+                        &nbsp; &nbsp;if(!unique.includes(ch)){  <br>
+                            &nbsp; &nbsp; &nbsp; unique+=ch <br>
+                        &nbsp; &nbsp;}  <br>
+                    &nbsp;} <br>
+                    &nbsp; return unique    <br>
+                }   <br>
+                console.log(removeDuplicate("Helloo"));  <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(6)Capitalize first letter of every word</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function capitalize(str){   <br>
+                    &nbsp; return str.split(" ").map((word)=>word.charAt(0).toUpperCase()+word.slice(1)).join(" ")  <br>
+                }   <br>
+                console.log(capitalize("i love js")); <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(7)Longest word</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function longest(str){   <br>
+                    &nbsp; return str.split(" ").reduce((longest,current)=>current.length>longest.length?current:longest)<br>
+                }   <br>
+                console.log(longest("i love javasript")); <br>
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
