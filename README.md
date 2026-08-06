@@ -49,25 +49,26 @@ A structured JavaScript revision repository covering everything from the fundame
 
 ---
 
-### 📌 Phase 5 – Mini Projects
-- Calculator
-- Counter
-- Temperature Converter
-- Digital Clock
-- Stopwatch
-- Accordion
-- Image Slider
-- Password Generator
-- To-Do App
-- Quiz App
+### 📌 Phase 5 – Events
+- Events
+- addEventListener,removeEventListener
+- Types of events
+- Event Objects
+- DOMContentLoaded,Load
+- Scroll
+- Event Bubbling
+- Event Capturing
+- Event Delegation
+
 
 ---
 
-### 📌 Phase 6 – Interview Preparation
-- Frequently Asked JavaScript Interview Questions
-- Coding Challenges
-- Output-Based Questions
-- Debugging Exercises
+### 📌 Phase 6 – Asynchronous-JS
+- Synchronous vs Asynchronous
+- Event Loop
+- Callback 
+- Promises and its methods
+- async/await
 
 ---
 
@@ -111,9 +112,15 @@ COMPLETE-JS/
 |   │── dom.js
 │   └── images/
 │
-├── Phase-5-Projects/
+├── Phase-5-Events/
 │
-└── Phase-6-Interview/
+└── Phase-6-Asynchronous-JS/
+│
+└── Phase-7-Fetch-API/
+│
+└── Phase-8-Array-Coding-Questions/
+│
+└── Phase-9-String-Coding-Questions/
 ```
 
 ---
@@ -171,8 +178,11 @@ npx @tailwindcss/cli -i input.css -o output.css --watch
 - [ ] Phase 2 – Control-Flow-and-Functions
 - [ ] Phase 3 – Array
 - [ ] Phase 4 – Objects-and-DOM
-- [ ] Phase 5 – Projects
-- [ ] Phase 6 – Interview Preparation
+- [ ] Phase 5 – Events
+- [ ] Phase 6 – Asynchronous-JS
+- [ ] Phase 7 – Fetch-API
+- [ ] Phase 8 – Array-Coding-Questions
+- [ ] Phase 9 – String-Coding-Questions
 
 ---
 
