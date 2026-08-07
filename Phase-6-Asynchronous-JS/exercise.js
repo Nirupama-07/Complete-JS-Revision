@@ -62,6 +62,7 @@ promise
     .then((results)=>console.log(results))
     .catch((error)=>console.log(error))*/
 
+
 //promise chaining
 /*let num=5
 function multiply(){
@@ -86,7 +87,9 @@ multiply()
     .then((data)=>add(data))
     .then((data)=>divide(data))
     .then((result)=>console.log(result))
-    .catch((error)=>console.log(error))*/
+    .catch((error)=>console.log(error))
+*/
+
 
 //login simulation
 /*function login(){
@@ -114,7 +117,9 @@ login()
         return getOrders()
     })
     .then((data)=>console.log(data))
-    .catch((error)=>console.log(error))*/
+    .catch((error)=>console.log(error))
+*/
+
 
 //Promise.all
 /*const promise1=Promise.resolve("HTML")
@@ -145,13 +150,14 @@ const promise2=new Promise((resolve, reject) => {
 })
 const promise3=new Promise((resolve, reject) => {
     setTimeout(()=>{
-        resolve("Promise 3")
+        reject("Promise 3")
     },1000)
 })
 Promise.race([promise1,promise2,promise3])
-    .then((data)=>console.log(data))*/
+    .then((data)=>console.log(data))
+    .catch((error)=>console.log(error))*/
 
-//promise.race
+//promise.any
 /*const promise1=new Promise((resolve, reject) => {
     setTimeout(()=>{
         reject("Promise 1")
@@ -160,15 +166,16 @@ Promise.race([promise1,promise2,promise3])
 const promise2=new Promise((resolve, reject) => {
     setTimeout(()=>{
         reject("Promise 2")
-    },2000)
+    },1000)
 })
 const promise3=new Promise((resolve, reject) => {
     setTimeout(()=>{
         resolve("Promise 3")
-    },1000)
+    },2000)
 })
 Promise.any([promise1,promise2,promise3])
-    .then((data)=>console.log(data))*/
+    .then((data)=>console.log(data))
+    .catch((error)=>console.log(error))*/
 
 //async/await
 /*function greet() {
@@ -186,6 +193,7 @@ async function main() {
 
 main();*/
 
+//async delay
 /*function wait(){
     setTimeout(()=>{
         console.log("wait...")
@@ -199,7 +207,7 @@ async function main() {
 main()*/
 
 //online food order
-function placeOrder(){
+/*function placeOrder(){
     return new Promise((resolve, reject) => {
         setTimeout(()=>{
             resolve("order placed")
@@ -233,4 +241,4 @@ async function main() {
     const message3=await foodDelivered()
     console.log(message3)
 }
-main()
+main()*/

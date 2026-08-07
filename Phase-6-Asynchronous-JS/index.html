@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phase-5 Events</title>
+    <title>Phase-6 Asynchronous JS</title>
     <link rel="stylesheet" href="output.css">
     <link rel="shortcut icon" href="./images/js.png" type="image/x-icon">
 </head>
@@ -27,9 +27,7 @@
                 <li class="pb-2">console.log("I am good")</li>
             </ul>
             </p>
-            <p class="pl-5 font-bold"><b class="text-green-600">Asynchronous:</b>It lets slow work begin without
-                blocking the rest of the program.Its
-                result is handled later by using callbacks,promises,async and await.e.g.<br>
+            <p class="pl-5 font-bold"><b class="text-green-600">Asynchronous:</b>Asynchronous programming allows long-running tasks (like API calls, timers, file reading) to run without blocking the rest of the code.<br>
             <ul class="pl-5 pt-3">
                 <li class="pb-2">console.log("Hi)</li>
                 <li class="pb-2">setTimeout(()=>{ <br>
@@ -206,10 +204,10 @@
             <p class="font-medium mt-4 pb-1 pl-5">Answer:.then(),.catch() and .finally() are the methods which are used
                 in promise.</p>
             <p class="pl-5">
-                <b>.then:</b>It runs when the promise succeeds.It receives the result
-                <b>.catch:</b>It runs when thepromise fails.It receives the error
+                <b>.then:</b>It runs when the promise succeeds.It receives the result   <br>
+                <b>.catch:</b>It runs when thepromise fails.It receives the error   <br>
                 <b>.finally:</b>It runs whether the promise succeeds or fails. use it for cleanup such as hiding a
-                loading spinner.
+                loading spinner. <br>
                 promise <br>
                 &nbsp; .then(result => console.log(result)) <br>
                 &nbsp; .catch(error => console.log(error)) <br>
@@ -303,7 +301,7 @@
 
         <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
-            <h1 class="font-bold text-xl pl-5">Q(12)What is async/await?</h1>
+            <h1 class="font-bold text-xl pl-5">Q(13)What is async/await?</h1>
             <p class="font-medium mt-4 pb-1 pl-5">Answer:It allows to write asynchronous code in a clean,synchronus like
                 manner, making it easier to read,understand and maintain while working with promises.</p>
             <p class="pl-5">
@@ -535,6 +533,10 @@
 
         </div>
     </div>
+
+    <footer class="text-center bg-blue-950 text-white text-2xl font-semibold mt-10 pt-3 pb-2">
+        &copy; Nirupama Majhi 2026 
+    </footer>
     <script src="./script.js"></script>
 </body>
 

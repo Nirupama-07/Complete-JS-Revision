@@ -63,24 +63,7 @@
         <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
 
-            <p class="font-medium pl-5">4.Answer:promise basics</p>
-            <p class="pl-5 "><br>
-                let marks=5 <br>
-                let promise=new Promise((resolve, reject) => {  <br>
-                &nbsp; &nbsp; if(marks>40){   <br>
-                &nbsp; &nbsp; &nbsp;resolve("passed")   <br>
-                
-                &nbsp; &nbsp;}else{  <br>
-                &nbsp; &nbsp; &nbsp;reject("Failed")    <br>
-                   
-                &nbsp; &nbsp;}   <br>
-                &nbsp; })  <br>
-                promise <br>
-                &nbsp;.then((result)=>console.log(result))    <br>
-                &nbsp; .catch((error)=>console.log(error))<br>
-            </p>
-
-            <p class="font-medium pl-5">4.Answer:promise basics</p>
+            <p class="font-medium pl-5">Answer:promise basics</p>
             <p class="pl-5 "><br>
                 let marks=5 <br>
                 let promise=new Promise((resolve, reject) => {  <br>
@@ -97,3 +80,265 @@
                 &nbsp; .catch((error)=>console.log(error))<br>
             </p>
         </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+
+            <p class="font-medium pl-5">4.Answer:Promise Delay</p>
+            <p class="pl-5 "><br>
+                let promise=new Promise((resolve, reject) => {  <br>
+                    &nbsp; setTimeout(()=>{    <br>
+                        &nbsp; &nbsp; resolve("order delivered")  <br>
+                    &nbsp; },2000) <br>
+                    
+                })  <br>
+                promise.then((result)=>console.log(result))<br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <p class="font-medium pl-5">5.Answer:promise rejection</p>
+            <p class="pl-5 "><br>
+                let choice=Math.random()    <br>
+                let promise=new Promise((resolve, reject) => {  <br>
+                    &nbsp; if(choice>=0.5){    <br>
+                        &nbsp; &nbsp;resolve("Payment successful")   <br>
+                    &nbsp;}else{  <br>
+                     &nbsp; &nbsp;reject("Payment Failed")    <br>
+                    &nbsp;}   <br>
+                })  <br>
+                promise <br>
+                    &nbsp;.then((results)=>console.log(results))  <br>
+                    &nbsp;.catch((error)=>console.log(error))<br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <p class="font-medium pl-5">6.Answer:promise chaining</p>
+            <p class="pl-5 "><br>
+                let num=5   <br>
+                function multiply(){    <br>
+                    &nbsp; return new Promise((resolve, reject) => {   <br>
+                        &nbsp; console.log(num*2)  <br>
+                        &nbsp; resolve("Done multiplying") <br>
+                    &nbsp; })  <br>
+                }   <br>
+                function add(data){ <br>
+                    &nbsp; return new Promise((resolve, reject) => {   <br>
+                        &nbsp; console.log(num+10) <br>
+                        &nbsp; resolve("Done add") <br>
+                    &nbsp; })  <br>
+                }   <br>
+                function divide(data){  <br>
+                    &nbsp; return new Promise((resolve, reject) => {   <br>
+                        &nbsp; console.log(num+5)  <br>
+                        &nbsp; resolve("done divide")  <br>
+                    &nbsp; })  <br>
+                }   <br>
+                multiply()  <br>
+                    &nbsp; .then((data)=>add(data))    <br>
+                    &nbsp; .then((data)=>divide(data)) <br>
+                    &nbsp; .then((result)=>console.log(result))    <br>
+                    &nbsp; .catch((error)=>console.log(error)) <br>
+
+                    <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <p class="font-medium pl-5">7.Answer:Login Simulation</p>
+            <p class="pl-5 "><br>
+                function login(){   <br>
+                    &nbsp; return new Promise((resolve, reject) => {   <br>
+                        &nbsp; &nbsp; resolve("Logged In")    <br>
+                    &nbsp; })  <br>
+                }   <br>
+                function getUser(){ <br>
+                    &nbsp; return new Promise((resolve, reject) => {   <br>
+                        &nbsp; &nbsp; resolve("users found")  <br>
+                    &nbsp; })  <br>
+                }   <br>
+                function getOrders(){   <br>
+                    &nbsp; return new Promise((resolve, reject) => {   <br>
+                        &nbsp; &nbsp; resolve("Orders loaded")    <br>
+                    &nbsp; })  <br>
+                }   <br>
+                login() <br>
+                    &nbsp; .then((data)=>{ <br>
+                        &nbsp; &nbsp; console.log(data)   <br>
+                        &nbsp; &nbsp; return getUser()    <br>
+                    &nbsp; })  <br>
+                    &nbsp; .then((data)=>{ <br>
+                        &nbsp; &nbsp; console.log(data)   <br>
+                        &nbsp; &nbsp; return getOrders()  <br>
+                    &nbsp; })  <br>
+                    &nbsp; .then((data)=>console.log(data))    <br>
+                    &nbsp; .catch((error)=>console.log(error)) <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <p class="font-medium pl-5">8.Answer:Promise.all()</p>
+            <p class="pl-5 "><br>
+                const promise1=Promise.resolve("HTML")  <br>
+                const promise2=Promise.resolve("CSS")   <br>
+                const promise3=Promise.resolve("JS")    <br>
+
+                Promise.all([promise1,promise2,promise3])   <br>
+                    &nbsp; .then((data)=>{ <br>
+                        &nbsp; &nbsp; console.log(data)   <br>
+                    &nbsp; })  <br>
+                    &nbsp; .catch((error)=>{   <br>
+                        &nbsp; &nbsp; console.log(error)  <br>
+                    &nbsp; })  <br>
+                    &nbsp; .finally(()=>{  <br>
+                        &nbsp; &nbsp; console.log("All courses completed")    <br>
+                    &nbsp; }) <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <p class="font-medium pl-5">9.Answer:Promise.race()</p>
+            <p class="pl-5 "><br>
+                const promise1=new Promise((resolve, reject) => {   <br>
+                setTimeout(()=>{    <br>
+                    &nbsp; resolve("Promise 1")    <br>
+                },3000) <br>
+            })  <br>
+            const promise2=new Promise((resolve, reject) => {   <br>
+                &nbsp; setTimeout(()=>{    <br>
+                    &nbsp; &nbsp; resolve("Promise 2")    <br>
+                &nbsp; },2000) <br>
+            })  <br>
+            const promise3=new Promise((resolve, reject) => {   <br>
+                &nbsp; setTimeout(()=>{    <br>
+                    &nbsp; &nbsp; reject("Promise 3") <br>
+                &nbsp; },1000) <br>
+            })  <br>
+            Promise.race([promise1,promise2,promise3])  <br>
+                &nbsp; .then((data)=>console.log(data))    <br>
+                &nbsp; .catch((error)=>console.log(error))<br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <p class="font-medium pl-5">10.Answer:Promise.any()</p>
+            <p class="pl-5 "><br>
+                const promise1=new Promise((resolve, reject) => { <br>
+                    &nbsp; setTimeout(()=>{ <br>
+                       &nbsp; &nbsp;  reject("Promise 1") <br>
+                    &nbsp;},3000) <br>
+                }) <br>
+                const promise2=new Promise((resolve, reject) => { <br>
+                    &nbsp; setTimeout(()=>{ <br>
+                        &nbsp; &nbsp; reject("Promise 2") <br>
+                    &nbsp; },1000) <br>
+                }) <br>
+                const promise3=new Promise((resolve, reject) => { <br>
+                    &nbsp; setTimeout(()=>{ <br>
+                        &nbsp; &nbsp; resolve("Promise 3") <br>
+                    &nbsp; },2000) <br>
+                }) <br>
+                Promise.any([promise1,promise2,promise3]) <br>
+                    &nbsp; .then((data)=>console.log(data)) <br>
+                    &nbsp; .catch((error)=>console.log(error))<br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <p class="font-medium pl-5">11.Answer:async/await</p>
+            <p class="pl-5 "><br>
+                function greet() {  <br>
+                    &nbsp; return new Promise((resolve, reject) => {    <br>
+                        &nbsp;  &nbsp; setTimeout(() => {   <br>
+                            &nbsp; &nbsp;  &nbsp;  resolve("Hi");   <br>
+                        &nbsp;  &nbsp; }, 2000);    <br>
+                    &nbsp; });  <br>
+                }   <br>
+
+                async function main() { <br>
+                    &nbsp;  &nbsp; const message = await greet();   <br>
+                    &nbsp; console.log(message);    <br>
+                }   <br>
+
+                main();<br>
+                    
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <p class="font-medium pl-5">12.Answer:async delay</p>
+            <p class="pl-5 "><br>
+                function wait(){    <br>
+                    &nbsp; setTimeout(()=>{    <br>
+                        &nbsp; &nbsp; console.log("wait...")  <br>
+                        &nbsp; &nbsp; console.log("Done") <br>
+                    &nbsp; },3000) <br>
+                }   <br>
+                async function main() { <br>
+                    &nbsp; const message=await wait()  <br>
+                    
+                }   <br>
+                main()<br>
+                    
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <p class="font-medium pl-5">13.Answer:online food order</p>
+            <p class="pl-5 "><br>
+                function placeOrder(){  <br>
+                    &nbsp; return new Promise((resolve, reject) => {   <br>
+                        &nbsp; &nbsp; setTimeout(()=>{    <br>
+                            &nbsp; &nbsp; &nbsp; resolve("order placed") <br>
+                        &nbsp; &nbsp; },2000) <br>
+                    &nbsp; })  <br>
+                }   <br>
+
+                function preparingFood(){   <br>
+                    &nbsp;return new Promise((resolve, reject) => {   <br>
+                            &nbsp; &nbsp;setTimeout(()=>{    <br>
+                            &nbsp; &nbsp; &nbsp; resolve("Preparing food")   <br>
+                        &nbsp; &nbsp; },2000) <br>
+                    &nbsp;})  <br>
+                }   <br>
+
+                function foodDelivered(){   <br>
+                    &nbsp; return new Promise((resolve, reject) => {   <br>
+                        &nbsp; &nbsp; setTimeout(()=>{    <br>
+                            &nbsp; &nbsp; &nbsp; resolve("Food Delivered")   <br>
+                        &nbsp; &nbsp; },2000) <br>
+                    &nbsp; })  <br>
+                }   <br>
+
+                async function main() { <br>
+                    &nbsp; const message=await placeOrder()    <br>
+                    &nbsp; console.log(message)    <br> <br>
+
+                    &nbsp; const message2=await preparingFood()    <br>
+                    &nbsp; console.log(message2)   <br> <br>
+
+                    &nbsp; const message3=await foodDelivered()    <br>
+                    &nbsp; console.log(message3)   <br> <br>
+                }   <br>
+                main()  <br>
+            </p>
+        </div>
+    </div>
+
+    <a href="index.html" class="pt-28 text-lg font-bold pl-20 text-blue-600 ">🡸 Go to Main Page</a>
+
+    <footer class="text-center bg-blue-950 text-white text-2xl font-semibold mt-10 pt-3 pb-2">
+        &copy; Nirupama Majhi 2026 
+    </footer>
+</body>
+</html>
