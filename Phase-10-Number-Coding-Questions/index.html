@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Number coding questions</title>
+    <link rel="shortcut icon" href="images/js.png" type="image/x-icon">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript Number Coding Questions
+    </h1>
+
+    <div class="flex-2 mt-10 pl-9 mr-6">
+        <div
+            class="border-be-blue-600 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(1)Factorial of a number</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function fact(num){ <br>
+                    &nbsp; let fact=1  <br>
+                    &nbsp; for(let i=1;i <= num;i++){    <br>
+                       &nbsp; &nbsp;  fact*=i <br>
+                    &nbsp; }   <br>
+                    &nbsp; return fact <br>
+                }   <br>
+                console.log(fact(2)); <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(2)Prime number</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function prime(num){    <br>
+                    &nbsp; if(num<=1){ <br>
+                        &nbsp; &nbsp;return false    <br>
+                    &nbsp;}   <br>
+                    &nbsp;for(let i=2;i<num;i++){ <br>
+                        &nbsp; &nbsp;if(num%i==0){   <br>
+                            &nbsp; &nbsp; &nbsp;return false    <br>
+                        &nbsp; &nbsp;}   <br>
+                    &nbsp;}   <br>
+                    &nbsp;return true;    <br>
+                }   <br>
+                console.log(prime(7)); <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(3)Fibonacci series</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function fibonacci(num){        <br>
+                    &nbsp; let a=0;        <br>
+                    &nbsp; let b=1     <br>
+                    &nbsp; for(let i=0;i<=num;i++){        <br>
+                        &nbsp; &nbsp;console.log(a);     <br>
+                        &nbsp; &nbsp;let next=a+b        <br>
+                        &nbsp; &nbsp;a=b     <br>
+                        &nbsp; &nbsp;b=next      <br>
+                    &nbsp; }       <br>
+                    
+                }       <br>
+                fibonacci(4) <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(4)Reverse Number</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function reverse(num){  <br>
+                    &nbsp; let reverse=0   <br>
+                    &nbsp; while(num>0){   <br>
+                        &nbsp; &nbsp; let digit=num%10;   <br>
+                        &nbsp; &nbsp; reverse=reverse*10+digit    <br>
+                        &nbsp; &nbsp; num=Math.floor(num/10)  <br>
+                    &nbsp; }   <br>
+                    &nbsp; return reverse  <br>
+                }   <br>
+                console.log(reverse(123)); <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(5)Palindrome Number</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function palindrome(num){  <br>
+                    &nbsp; let reverse=0   <br>
+                    &nbsp; while(num>0){   <br>
+                        &nbsp; &nbsp; let digit=num%10;   <br>
+                        &nbsp; &nbsp; reverse=reverse*10+digit    <br>
+                        &nbsp; &nbsp; num=Math.floor(num/10)  <br>
+                    &nbsp; }   <br>
+                    &nbsp; if(reverse===temp){ <br>
+                        &nbsp; &nbsp;return true <br>
+                    &nbsp; }   <br>
+                    &nbsp; else{   <br>
+                        &nbsp; &nbsp;return false    <br>
+                    &nbsp; }  <br>
+                }   <br>
+                console.log(palindrome(1221)); <br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(6)Total even number</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function total(num){    <br>
+                    &nbsp; let count=0 <br>
+                    &nbsp; for(let i=0;i<=num;i++){    <br>
+                        &nbsp; &nbsp; if(i%2==0){ <br>
+                            &nbsp; &nbsp; &nbsp; count++ <br>
+                        &nbsp; &nbsp; }   <br>
+                    &nbsp; }   <br>
+                    &nbsp; return count    <br>
+                }   <br>
+                console.log(total(100));<br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(7)Total prime numbers</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function isPrime(num){  <br>
+                    &nbsp; if(num<=1){ <br>
+                        &nbsp; &nbsp;return false    <br>
+                    &nbsp; }   <br>
+                    &nbsp; for(let i=2;i < num;i++){ <br>
+                        &nbsp; &nbsp; if(num%i==0){   <br>
+                            &nbsp; &nbsp; &nbsp; return false    <br>
+                        &nbsp; &nbsp;}   <br>
+                    &nbsp; }   <br>
+                    &nbsp; return true <br>
+                }   <br>
+
+                function totalPrime(num) {  <br>
+                    &nbsp; let count = 0;  <br>
+
+                    &nbsp; for (let i = 2; i <= num; i++) {    <br>
+                        &nbsp; &nbsp;if (isPrime(i)) {   <br>
+                            &nbsp; &nbsp; &nbsp; count++;    <br>
+                        &nbsp; &nbsp;}   <br>
+                    &nbsp; }   <br>
+
+                    &nbsp; return count;   <br>
+                }   <br>
+
+                console.log(totalPrime(100));<br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(8)Sum of digits</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function sum(num){  <br>
+                    &nbsp; let sum=0   <br>
+                    &nbsp; while(num>0){   <br>
+                        &nbsp; &nbsp; let digit=num%10    <br>
+                        &nbsp; &nbsp; sum+=digit  <br>
+                        &nbsp; &nbsp; num=Math.floor(num/10)  <br>
+                    &nbsp; }   <br>
+                    &nbsp; return sum  <br>
+                }   <br>
+                console.log(sum(12));<br>
+            </p>
+        </div>
+
+        <div
+            class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
+            <h1 class="font-bold text-xl pl-5">Q(9)Armstrong number</h1>
+            <p class="font-medium mt-4 pb-1 pl-5">
+                function armstrong(num){    <br>
+                    &nbsp; let temp=num    <br>
+                    &nbsp; let sum=0   <br>
+                    &nbsp; let digits=num.toString().length    <br>
+                    &nbsp; while(num>0){   <br>
+                        &nbsp; &nbsp; let digit=num%10    <br>
+                        &nbsp; &nbsp; sum=sum+ digit**digits  <br>
+                        &nbsp; &nbsp; num=Math.floor(num/10)  <br>
+                    &nbsp; }   <br>
+                    &nbsp; if(sum==temp){  <br>
+                        &nbsp; &nbsp; return true <br>
+                    &nbsp; }else{  <br>
+                        &nbsp; &nbsp; return false    <br>
+                    &nbsp; }   <br>
+                } <br>
+                console.log(armstrong(153));<br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
