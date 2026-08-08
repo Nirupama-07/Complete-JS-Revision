@@ -77,7 +77,7 @@ createUsers()*/
 deleteUser(1);*/
 
 
-let btn=document.getElementById("btn")
+/*let btn=document.getElementById("btn")
 let usersDiv=document.getElementById("users")
 btn.addEventListener('click',async()=>{
     try{
@@ -105,4 +105,53 @@ btn.addEventListener('click',async()=>{
     }catch(error){
         console.log(error);
     }
-})
+})*/
+
+//cards fetch+DOM
+let container = document.getElementById("users-container")
+
+async function card() {
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/users")
+        const data = await response.json()
+        data.forEach((user) => {
+            const card = document.createElement("div")
+            card.classList.add("card")
+
+            card.innerHTML = `
+                <div class="w-72 p-5 bg-white rounded-2xl shadow-lg">
+                    <h2 class="text-xl font-bold text-gray-800">
+                        ${user.name}
+                    </h2>
+
+                    <p class="text-gray-600 mt-2">
+                        📧 ${user.email}
+                    </p>
+
+                    <p class="text-gray-600 mt-2">
+                        📞 ${user.phone}
+                    </p>
+
+                    <p class="text-gray-600 mt-2">
+                        🌐 ${user.website}
+                    </p>
+
+                    <p class="text-gray-600 mt-2">
+                        📍 ${user.address.city}
+                    </p>
+
+                    <p class="text-gray-600 mt-2">
+                        🏢 ${user.company.name}
+                    </p>
+                </div>
+            `;
+
+            container.appendChild(card)
+
+        })
+    } catch (error) {
+        console.log(error);
+
+    }
+}
+card()
