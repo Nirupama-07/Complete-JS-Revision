@@ -1,1 +1,1 @@
-npx @tailwindcss/cli -i input.css -o "Phase-7-Fetch-API/output.css" --watch
+npx @tailwindcss/cli -i input.css -o "Phase-2-JS-Control-Flow-and-Functions/output.css" --watch
