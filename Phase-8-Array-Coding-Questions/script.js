@@ -32,7 +32,9 @@ console.log(largest)*/
 }
 console.log(secondLargest([10,20,30,25,65,35,55]))*/
 
+
 //Reverse an array
+
 /*const arr=[10,20,30,40]
 
 let reversed=[]

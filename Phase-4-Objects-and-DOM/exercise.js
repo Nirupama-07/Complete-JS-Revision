@@ -1,5 +1,5 @@
 //Student object
-const student={
+/*const student={
     name:"Priyansh",
     age:24,
     address:{
@@ -29,8 +29,9 @@ const subject={
     third:"js"
 }
 const merge={...student,...subject}
-console.log(merge)
+console.log(merge)*/
 
+//students object
 const students=[
     {
         name:"Priyansh",
@@ -64,9 +65,9 @@ const students=[
     },
 ]
 
-students.forEach((item)=>{
-    console.log(item)
-})
+// students.forEach((item)=>{
+//     console.log(item)
+// })
 
 const highest = students.reduce((max, student) => {
     return student.mark > max.mark ? student : max;
@@ -74,7 +75,7 @@ const highest = students.reduce((max, student) => {
 
 console.log(highest);
 
-const averageAge = students.reduce((total, student) => {
+/*const averageAge = students.reduce((total, student) => {
     return total + student.age;
 }, 0) / students.length;
 
@@ -93,4 +94,4 @@ const grouped = students.reduce((acc, student) => {
     return acc;
 }, {});
 
-console.log(grouped);
+console.log(grouped);*/

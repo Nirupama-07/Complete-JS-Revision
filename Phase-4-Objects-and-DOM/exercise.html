@@ -73,12 +73,12 @@
             <h1 class="font-bold text-xl pl-5">1.Create an array of 5 students and print all their names</h1>
             <h1 class="font-bold text-xl pl-5">2.Find the students of highest marks</h1>
             <h1 class="font-bold text-xl pl-5">3.Calculate the average age</h1>
-            <h1 class="font-bold text-xl pl-5">Count the number of properties/h1>
-            <h1 class="font-bold text-xl pl-5">4.Sort students by marks/h1>
-                <h1 class="font-bold text-xl pl-5">5.Group students by department/h1>
+            <h1 class="font-bold text-xl pl-5">Count the number of properties</h1>
+            <h1 class="font-bold text-xl pl-5">4.Sort students by marks</h1>
+                <h1 class="font-bold text-xl pl-5">5.Group students by department</h1>
             <p class="font-medium mt-4 pb-1 pl-5">Answer:</p>
             <p class="pl-5  font-light">
-                const students=[        <br>
+                1. const students=[        <br>
                    &nbsp; {     <br>
                       &nbsp; &nbsp;  name:"Priyansh",       <br>
                       &nbsp; &nbsp;  mark:98,       <br>
@@ -109,35 +109,35 @@
                       &nbsp; &nbsp;  age:23,        <br>
                       &nbsp; &nbsp;  department:"CSE"       <br>
                    &nbsp; },        <br>
-                ]       <br>
+                ]       <br> <br>
 
                 students.forEach((item)=>{      <br>
-                    console.log(item)       <br>
-                })      <br>
+                    &nbsp; console.log(item)       <br>
+                })      <br> <br>
 
-                const highest = students.reduce((max, student) => {     <br>
-                    return student.mark > max.mark ? student : max;     <br>
+                2. const highest = students.reduce((max, student) => {     <br>
+                    &nbsp; return student.mark > max.mark ? student : max;     <br>
                 });     <br>
 
-                console.log(highest);       <br>
+                console.log(highest);       <br> <br>
 
-                const averageAge = students.reduce((total, student) => {        <br>
-                    return total + student.age;     <br>
+                3. const averageAge = students.reduce((total, student) => {        <br>
+                    &nbsp; return total + student.age;     <br>
                 }, 0) / students.length;        <br>
 
-                console.log(averageAge);        <br>
+                console.log(averageAge);        <br> <br>
 
-                const sortMarks=[...students].sort((a,b)=>a.mark-b.mark)        <br>
+                4. const sortMarks=[...students].sort((a,b)=>a.mark-b.mark)        <br>
                 console.log(sortMarks)      <br>
 
                 const grouped = students.reduce((acc, student) => {     <br>
-                    if (!acc[student.department]) {     <br>
-                        acc[student.department] = [];       <br>
-                    }       <br>
+                    &nbsp; if (!acc[student.department]) {     <br>
+                        &nbsp; &nbsp; acc[student.department] = [];       <br>
+                    &nbsp; }       <br>
 
-                    acc[student.department].push(student);      <br>
+                    &nbsp; acc[student.department].push(student);      <br>
 
-                    return acc;     <br>
+                    &nbsp; return acc;     <br>
                 }, {});     <br>
 
                 console.log(grouped);       <br>

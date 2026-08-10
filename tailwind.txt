@@ -1,1 +1,1 @@
-npx @tailwindcss/cli -i input.css -o "Phase-8-Array-Coding-Questions/output.css" --watch
+npx @tailwindcss/cli -i input.css -o "Phase-7-Fetch-API/output.css" --watch

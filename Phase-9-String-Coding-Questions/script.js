@@ -25,6 +25,21 @@ console.log(reverse("Hello"))*/
 }
 console.log(palindrome("hello"));*/
 
+/*function isPalindrome2(str){
+
+    let reverse=""
+    for(let i=str.length-1;i>=0;i--){
+        reverse+=str[i]
+    }
+    if(reverse===str){
+        return true
+    }else{
+        return false
+    }
+}
+console.log(isPalindrome2("madam"));*/
+
+
 //count vowels
 
 /*function vowel(str){
@@ -73,6 +88,19 @@ console.log(capitalize("i love js"));*/
 }
 console.log(longest("i love javascript"));*/
 
+/*function longest(str){
+    let arr=str.split(/\s/)
+    let longest=arr[0]
+    for(let ch of arr){
+        if(ch.length>longest.length){
+            longest=ch
+        }
+    }
+    return longest
+}
+console.log(longest("Hi can you hear me"));*/
+
+
 //count frequency
 /*function frequency(str){
     let freq={}
@@ -102,8 +130,20 @@ console.log(frequency("hello"));*/
 }
 console.log(anagram("silent","listen"));*/
 
+/*function anagram(str1,str2){
+    let sorted1=str1.split("").sort().join("")
+    let sorted2=str2.split("").sort().join("")
+
+    if(sorted1===sorted2){
+        return true
+    }else{
+        return false
+    }
+}
+console.log(anagram("listen","silent"));*/
+
 //first non-repeating characters
-function nonRepeat(str){
+/*function nonRepeat(str){
     let freq={}
     for(let ch of str){
         freq[ch]=(freq[ch] || 0)+1
@@ -115,7 +155,4 @@ function nonRepeat(str){
     }
     return null
 }
-console.log(nonRepeat("helloh"));
-
-
-
+console.log(nonRepeat("helloh"));*/
