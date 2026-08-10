@@ -13,13 +13,20 @@
     <h1 class="text-center bg-blue-950 text-white text-3xl font-bold pt-5 pb-4 px-4 ">Javascript Control-Flow &
         Functions</h1>
     <div class="flex gap-10 text-blue-800 mt-5 pl-5 text-2xl font-bold">
-        <a href="/Phase-1-JS Fundamentals/index.html">Chapter 1</a>
+        <a href="/Phase-2-JS-Control-Flow-and-Functions/index.html">Chapter 2</a>
+
         <a href="/Phase-3-Array/index.html">Chapter 3</a>
+
         <a href="/Phase-4-Objects-and-DOM/index.html">Chapter 4</a>
+
         <a href="/Phase-5-Events/index.html">Chapter 5</a>
+
         <a href="/Phase-6-Asynchronous-JS/index.html">Chapter 6</a>
+
         <a href="/Phase-7-Fetch-API/index.html">Chapter 7</a>
-    </div> <hr>
+    </div>
+
+    <hr>
 
     <div class="flex-2 mt-10 pl-9 mr-6">
         <div
@@ -150,9 +157,9 @@
             <p class="pb-6 pl-5">
                 let value = 10; <br>
 
-                do {    <br>
-                console.log("Runs once");   <br>
-                } while (value < 5); </p>   
+                do { <br>
+                console.log("Runs once"); <br>
+                } while (value < 5); </p>
         </div>
 
         <div
@@ -162,22 +169,22 @@
                 is met. </p>
             <p class="mt-4 pb-6 pl-5">
                 for (let i = 1; i <= 10; i++) { <br>
-                    if (i === 5) {  <br>
-                        break;  <br>
-                    }   <br>
+                    if (i === 5) { <br>
+                    break; <br>
+                    } <br>
                     console.log(i); <br>
-                }
+                    }
             </p>
 
             <p class="font-medium mt-4 pl-5">continue:it is used to skips the current iteration and moves to the next
                 iteration. </p>
-            <p class="mt-4 pb-6 pl-5"> 
+            <p class="mt-4 pb-6 pl-5">
                 for (let i = 1; i <= 10; i++) { <br>
-                    if (i === 5) {  <br>
-                        continue;  <br>
-                    }   <br>
+                    if (i === 5) { <br>
+                    continue; <br>
+                    } <br>
                     console.log(i); <br>
-                }
+                    }
             </p>
         </div>
 
@@ -186,257 +193,289 @@
             <h1 class="font-bold text-xl pl-5">Q(7)What is Nested Loops?</h1>
             <p class="font-medium mt-4 pl-5">Answer:It is a loop inside another loop. The inner function will complete
                 all its iteration for each iteration of outer loop. </p>
-            <p class="mt-4 pb-6 pl-5"> 
-                for (let row = 1; row <= 3; row++) {    <br>
-                    for (let col = 1; col <= 2; col++) {  <br>
+            <p class="mt-4 pb-6 pl-5">
+                for (let row = 1; row <= 3; row++) { <br>
+                    for (let col = 1; col <= 2; col++) { <br>
                         console.log(`Row: ${row}, Column: ${col}`); <br>
-                    }   <br>
-                }
+                        } <br>
+                        }
             </p>
         </div>
 
         <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
             <h1 class="font-bold text-xl pl-5">Q(8)What is Function?</h1>
-            <p class="font-medium mt-4 pl-5">Answer:A function is a reusable block of code designed to perform a specific task.They allow to organize, reuse and modularize code. In functions <b class="text-red-600">'parameters'</b>  is the <u class="underline decoration-red-600 underline-offset-4">placeholder</u>  defined in the function and <b class="text-red-600">'argument'</b>  is the <u class="underline decoration-red-600 underline-offset-4">actual values which we passed during the function call</u> . The function have a <b class="text-yellow-600">return</b>  statement. The <u class="underline decoration-green-600 underline-offset-4">return statement is used to send data from a function</u> . When the return statement is executes the function stopped running at that point. </p>
-            <p class="mt-4 pb-6 pl-5"> 
-                function greet() {  <br>
-                    console.log("Hi! Good Morning") <br>
-                }   <br>
+            <p class="font-medium mt-4 pl-5">Answer:A function is a reusable block of code designed to perform a
+                specific task.They allow to organize, reuse and modularize code. In functions <b
+                    class="text-red-600">'parameters'</b> is the <u
+                    class="underline decoration-red-600 underline-offset-4">placeholder</u> defined in the function and
+                <b class="text-red-600">'argument'</b> is the <u
+                    class="underline decoration-red-600 underline-offset-4">actual values which we passed during the
+                    function call</u> . The function have a <b class="text-yellow-600">return</b> statement. The <u
+                    class="underline decoration-green-600 underline-offset-4">return statement is used to send data from
+                    a function</u> . When the return statement is executes the function stopped running at that point.
+            </p>
+            <p class="mt-4 pb-6 pl-5">
+                function greet() { <br>
+                console.log("Hi! Good Morning") <br>
+                } <br>
                 greet() <br>
                 greet() <br>
-                greet() 
+                greet()
             </p>
         </div>
 
         <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
             <h1 class="font-bold text-xl pl-5">Q(7)What is Function Declaration?</h1>
-            <p class="font-medium mt-4 pl-5">Answer:A function that has its own name is know as function declaration. It is also known as named function.</p>
-            <p class="mt-4 pb-6 pl-5"> 
-                function greet() {  <br>
-                    console.log("Hi! Good Morning") <br>
-                }   <br>
+            <p class="font-medium mt-4 pl-5">Answer:A function that has its own name is know as function declaration. It
+                is also known as named function.</p>
+            <p class="mt-4 pb-6 pl-5">
+                function greet() { <br>
+                console.log("Hi! Good Morning") <br>
+                } <br>
                 greet() <br>
                 greet() <br>
-                greet() 
+                greet()
             </p>
-            <p class="font-medium mt-4 pl-5">Function declaration are hoisted so they can be call before their declaration.</p>
-            <p class="mt-4 pb-6 pl-5"> 
+            <p class="font-medium mt-4 pl-5">Function declaration are hoisted so they can be call before their
+                declaration.</p>
+            <p class="mt-4 pb-6 pl-5">
                 greet() <br>
 
-                function greet() {  <br>
-                    console.log("Hi! Good Morning") <br>
-                }   
-              
+                function greet() { <br>
+                console.log("Hi! Good Morning") <br>
+                }
+
             </p>
         </div>
 
         <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
             <h1 class="font-bold text-xl pl-5">Q(8)What is Function Expression?</h1>
-            <p class="font-medium mt-4 pl-5">Answer:A function created as a part of a an expression and stored it in a variable(This is same as anonymous function).</p>
-            <p class="mt-4 pb-6 pl-5"> 
-                const greet = function(a,b) {  <br>
-                    return a+b <br>
-                }   <br>
+            <p class="font-medium mt-4 pl-5">Answer:A function created as a part of a an expression and stored it in a
+                variable(This is same as anonymous function).</p>
+            <p class="mt-4 pb-6 pl-5">
+                const greet = function(a,b) { <br>
+                return a+b <br>
+                } <br>
                 console.log(greet(2,3)) <br>
                 console.log(greet(5,6)) <br>
-                console.log(greet(1,2)) 
+                console.log(greet(1,2))
             </p>
-            <p class="font-medium mt-4 pl-5">Unlike a named function function expression is not hoisted which means it cannot be called before the variable is initialized.</p>
+            <p class="font-medium mt-4 pl-5">Unlike a named function function expression is not hoisted which means it
+                cannot be called before the variable is initialized.</p>
         </div>
 
         <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
             <h1 class="font-bold text-xl pl-5">Q(9)What is Arrow Function?</h1>
-            <p class="font-medium mt-4 pl-5">Answer:An arrow function is a shorter syntax for a function by using (=>) symbol.</p>
-            <p class="mt-4 pb-6 pl-5"> 
+            <p class="font-medium mt-4 pl-5">Answer:An arrow function is a shorter syntax for a function by using (=>)
+                symbol.</p>
+            <p class="mt-4 pb-6 pl-5">
                 const square=n=>n**n <br>
                 console.log(square(2))
             </p>
-            
+
         </div>
 
         <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
             <h1 class="font-bold text-xl pl-5">Q(9)What is Default Parameters?</h1>
-            <p class="font-medium mt-4 pl-5">Answer:Default parameters assign a fallback value when an argument is omitted or is undefined.</p>
-            <p class="mt-4 pb-6 pl-5"> 
-                function greet(name = "Guest") {    <br>
-                    return `Hello, ${name}`;    <br>
-                }   <br>
+            <p class="font-medium mt-4 pl-5">Answer:Default parameters assign a fallback value when an argument is
+                omitted or is undefined.</p>
+            <p class="mt-4 pb-6 pl-5">
+                function greet(name = "Guest") { <br>
+                return `Hello, ${name}`; <br>
+                } <br>
 
-                console.log(greet());       <br>
+                console.log(greet()); <br>
                 console.log(greet("Asha")); <br>
-                
+
             </p>
-            
+
         </div>
 
         <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
             <h1 class="font-bold text-xl pl-5">Q(9)What is Rest Parameters?</h1>
-            <p class="font-medium mt-4 pl-5">Answer:Rest parameter is used to collect multiple arguments into a single array.It is used in function parameter list.</p>
-            <p class="mt-4 pb-6 pl-5"> 
-                function sum(...numbers){   <br>
-                    let total=0     <br>
-                    for(let num of numbers){    <br>
-                        total+=num  <br>
-                    }   <br>
-                    return total    <br>
-                }   <br>
+            <p class="font-medium mt-4 pl-5">Answer:Rest parameter is used to collect multiple arguments into a single
+                array.It is used in function parameter list.</p>
+            <p class="mt-4 pb-6 pl-5">
+                function sum(...numbers){ <br>
+                let total=0 <br>
+                for(let num of numbers){ <br>
+                total+=num <br>
+                } <br>
+                return total <br>
+                } <br>
                 console.log(sum(10,20,30))
-                
+
             </p>
-            
+
         </div>
 
         <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
             <h1 class="font-bold text-xl pl-5">Q(10)What is Spread operator?</h1>
-            <p class="font-medium mt-4 pl-5">Answer:Spread operator is used to expand arrays,object or iterable into an individual element.</p>
-            <p class="mt-4 pb-6 pl-5"> 
-                let student = {     <br>
-                    name: "John",       <br>
-                    age: 20     <br>
-                };      <br>
+            <p class="font-medium mt-4 pl-5">Answer:Spread operator is used to expand arrays,object or iterable into an
+                individual element.</p>
+            <p class="mt-4 pb-6 pl-5">
+                let student = { <br>
+                name: "John", <br>
+                age: 20 <br>
+                }; <br>
 
-                let newStudent = {      <br>
-                    ...student,     <br>
-                    city: "Delhi"       <br>
-                };      <br>
+                let newStudent = { <br>
+                ...student, <br>
+                city: "Delhi" <br>
+                }; <br>
 
                 console.log(newStudent);
             </p>
-            
+
         </div>
 
         <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
             <h1 class="font-bold text-xl pl-5">Q(11)What is callback function?</h1>
-            <p class="font-medium mt-4 pl-5">Answer:A function which is passed as an argument to another function and is executed later by that function.</p>
-            <p class="mt-4 pb-6 pl-5"> 
-                function greet(name,callback){      <br>
-                    console.log(`Hello ${name}`)    <br>
-                    callback()  <br>
-                }   <br>
+            <p class="font-medium mt-4 pl-5">Answer:A function which is passed as an argument to another function and is
+                executed later by that function.</p>
+            <p class="mt-4 pb-6 pl-5">
+                function greet(name,callback){ <br>
+                console.log(`Hello ${name}`) <br>
+                callback() <br>
+                } <br>
                 function say(){ <br>
-                    console.log("Good morning") <br>
-                }   <br>
-                greet("Rahul",say)  <br>
+                console.log("Good morning") <br>
+                } <br>
+                greet("Rahul",say) <br>
                 //here hi is the callback function
             </p>
-            
+
         </div>
 
         <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
             <h1 class="font-bold text-xl pl-5">Q(12)What is High-Order Function?</h1>
             <p class="font-medium mt-4 pl-5">Answer:A function is a high order function if:
-                <ul class="pl-10">
-                    <li class="list-disc">It passes one or more functions as an arguments</li>
-                    <li class="list-disc">It returns a function</li>
-                </ul>
+            <ul class="pl-10">
+                <li class="list-disc">It passes one or more functions as an arguments</li>
+                <li class="list-disc">It returns a function</li>
+            </ul>
             </p>
-            <p class="mt-4 pb-6 pl-5"> 
-                function applyOperation(x,y,operation){      <br>
-                    return operation(x,y) <br>
-                }   <br>
-                function add(a,b){ <br>
-                    return a+b <br>
-                }   <br>
-                console.log(applyOperation(9,6,add))  <br>
-                
-            </p>
-            
-            <p class="font-medium mt-1 pl-5"> map, filter, and reduce are common higher-order functions.</p>
-                
             <p class="mt-4 pb-6 pl-5">
-                const numbers = [1, 2, 3, 4];   <br>
-                const doubled = numbers.map(n => n * 2);       // [2, 4, 6, 8]  <br>
-                const even = numbers.filter(n => n % 2 === 0); // [2, 4]    <br>
+                function applyOperation(x,y,operation){ <br>
+                return operation(x,y) <br>
+                } <br>
+                function add(a,b){ <br>
+                return a+b <br>
+                } <br>
+                console.log(applyOperation(9,6,add)) <br>
+
+            </p>
+
+            <p class="font-medium mt-1 pl-5"> map, filter, and reduce are common higher-order functions.</p>
+
+            <p class="mt-4 pb-6 pl-5">
+                const numbers = [1, 2, 3, 4]; <br>
+                const doubled = numbers.map(n => n * 2); // [2, 4, 6, 8] <br>
+                const even = numbers.filter(n => n % 2 === 0); // [2, 4] <br>
                 const total = numbers.reduce((sum, n) => sum + n, 0); // 10
             </p>
-            
+
         </div>
 
         <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
             <h1 class="font-bold text-xl pl-5">Q(13)Explain all the popular HOF?</h1>
-            <p class="font-medium mt-4 pl-5">Answer:A high order function is a function which takes one or more functions as an argument and return a function.Some of the popular HOF are: map,filter ,reduce,forEach,find,some,every</p>
-            <p class="mt-1 pb-6 pl-5"> 
-                <p><b class="font-bold text-red-600 pl-5">map():</b>The map function is used to transform an element by applying callback function to each elemnt. It returns a <b>new Array.</b></p>
-                <p class="pl-5 pb-2">e.g.   <br>
-                    const n=[1,2,3,4,5] <br>
-                    const square=n.map((elem)=>elem*elem)   <br>
-                    console.log(square) 
-                </p>
-
-                <p><b class="font-bold text-red-600 pl-5">filter():</b>The filter function is used to create a new array containing element that satisfies the given condition. It returns a <b>new Array.</b></p>
-                <p class="pl-5 pb-2">e.g.   <br>
-                    const n=[1,2,3,4,5] <br>
-
-                    const even=n.filter((num)=>num%2==0)    <br>
-                    console.log(even)
-                </p>
-
-                <p><b class="font-bold text-red-600 pl-5">reduce():</b>The reduce function accumulates the array elements into a single value based on a callback function</p>
-                <p class="pl-5 pb-2">e.g.   <br>
-                    const n=[1,2,3,4,5] <br>
-
-                    const sum=n.reduce((acc,curr)=>acc+curr,0)  <br>
-                    console.log(sum)    <br>
-                    //acc->store the result of the value sum    <br>
-                    //0->initial value  <br>
-                </p>
-
-                <p><b class="font-bold text-red-600 pl-5">for-each():</b>It executes a provided function for each array element. It <b>does not returns a new Array.</b></p>
-                <p class="pl-5 pb-2">e.g.   <br>
-                    const n=[1,2,3,4,5] <br>
-                    n.forEach((num)=>console.log(num*2))
-                </p>
-
-                <p><b class="font-bold text-red-600 pl-5">find():</b>It returns the first element of the array which satisfies the given condition</p>
-                <p class="pl-5 pb-2">e.g.   <br>
-                    const n=[1,2,3,4,5] <br>
-                    const fEven=n.find((num)=>num%2==0)
-                    console.log(fEven)
-                </p>
-
-                <p><b class="font-bold text-red-600 pl-5">some():</b>It checks atleast one array element satisfies the condition. It returns the value in true or false</p>
-                <p class="pl-5 pb-2">e.g.   <br>
-                    const n=[1,2,3,-4,5] <br>
-                    const hasNeg=n.some((num)=>num<0)   <br>
-                    console.log(hasNeg)
-                </p>
-
-                <p><b class="font-bold text-red-600 pl-5">every():</b>It checks that if every element in the array satisfies the condition. It returns value in true or false.</p>
-                <p class="pl-5 pb-2">e.g.   <br>
-                    const n=[1,2,3,4,5] <br>
-                    const hasNeg=n.some((num)=>num>0)   <br>
-                    console.log(hasNeg)
-                </p>
+            <p class="font-medium mt-4 pl-5">Answer:A high order function is a function which takes one or more
+                functions as an argument and return a function.Some of the popular HOF are: map,filter
+                ,reduce,forEach,find,some,every</p>
+            <p class="mt-1 pb-6 pl-5">
+            <p><b class="font-bold text-red-600 pl-5">map():</b>The map function is used to transform an element by
+                applying callback function to each elemnt. It returns a <b>new Array.</b></p>
+            <p class="pl-5 pb-2">e.g. <br>
+                const n=[1,2,3,4,5] <br>
+                const square=n.map((elem)=>elem*elem) <br>
+                console.log(square)
             </p>
-            
+
+            <p><b class="font-bold text-red-600 pl-5">filter():</b>The filter function is used to create a new array
+                containing element that satisfies the given condition. It returns a <b>new Array.</b></p>
+            <p class="pl-5 pb-2">e.g. <br>
+                const n=[1,2,3,4,5] <br>
+
+                const even=n.filter((num)=>num%2==0) <br>
+                console.log(even)
+            </p>
+
+            <p><b class="font-bold text-red-600 pl-5">reduce():</b>The reduce function accumulates the array elements
+                into a single value based on a callback function</p>
+            <p class="pl-5 pb-2">e.g. <br>
+                const n=[1,2,3,4,5] <br>
+
+                const sum=n.reduce((acc,curr)=>acc+curr,0) <br>
+                console.log(sum) <br>
+                //acc->store the result of the value sum <br>
+                //0->initial value <br>
+            </p>
+
+            <p><b class="font-bold text-red-600 pl-5">for-each():</b>It executes a provided function for each array
+                element. It <b>does not returns a new Array.</b></p>
+            <p class="pl-5 pb-2">e.g. <br>
+                const n=[1,2,3,4,5] <br>
+                n.forEach((num)=>console.log(num*2))
+            </p>
+
+            <p><b class="font-bold text-red-600 pl-5">find():</b>It returns the first element of the array which
+                satisfies the given condition</p>
+            <p class="pl-5 pb-2">e.g. <br>
+                const n=[1,2,3,4,5] <br>
+                const fEven=n.find((num)=>num%2==0)
+                console.log(fEven)
+            </p>
+
+            <p><b class="font-bold text-red-600 pl-5">some():</b>It checks atleast one array element satisfies the
+                condition. It returns the value in true or false</p>
+            <p class="pl-5 pb-2">e.g. <br>
+                const n=[1,2,3,-4,5] <br>
+                const hasNeg=n.some((num)=>num<0) <br>
+                    console.log(hasNeg)
+            </p>
+
+            <p><b class="font-bold text-red-600 pl-5">every():</b>It checks that if every element in the array satisfies
+                the condition. It returns value in true or false.</p>
+            <p class="pl-5 pb-2">e.g. <br>
+                const n=[1,2,3,4,5] <br>
+                const hasNeg=n.some((num)=>num>0) <br>
+                console.log(hasNeg)
+            </p>
+            </p>
+
         </div>
 
-        
+
         <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
             <h1 class="font-bold text-xl pl-5">Q(14)What is Function Binding?</h1>
-            <p class="font-medium mt-4 pl-5">Answer:Function binding is the process of permanently associating a function with a specific object so that the this keyword inside the function always refers to that object. In JavaScript, function binding is achieved using the bind() method, which returns a new function without executing it immediately.call():It immediately invokes a function allowing you to set the value of this and pass arguments to the function. apply() is same as call() but it passed as an array</p>
-            <p class="mt-4 pb-6 pl-5"> 
+            <p class="font-medium mt-4 pl-5">Answer:Function binding is the process of permanently associating a
+                function with a specific object so that the this keyword inside the function always refers to that
+                object. In JavaScript, function binding is achieved using the bind() method, which returns a new
+                function without executing it immediately.call():It immediately invokes a function allowing you to set
+                the value of this and pass arguments to the function. apply() is same as call() but it passed as an
+                array</p>
+            <p class="mt-4 pb-6 pl-5">
                 const student={ <br>
-                    name:"Nirupama",    <br>
-                    age:21  <br>
-                }   <br>
-                function sayHi(area){   <br>
-                    console.log(this.name,'is',this.age,'years old',area)    <br>
-                }   <br>
-                sayHi.call(student,'Bhubaneswar')   <br>
-                sayHi.apply(student,['Bhubaneswar'])    <br>
-                let result=sayHi.bind(student,'Bhubaneswar')  <br>
+                name:"Nirupama", <br>
+                age:21 <br>
+                } <br>
+                function sayHi(area){ <br>
+                console.log(this.name,'is',this.age,'years old',area) <br>
+                } <br>
+                sayHi.call(student,'Bhubaneswar') <br>
+                sayHi.apply(student,['Bhubaneswar']) <br>
+                let result=sayHi.bind(student,'Bhubaneswar') <br>
                 result()
             </p>
         </div>
@@ -444,84 +483,96 @@
         <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
             <h1 class="font-bold text-xl pl-5">Q(15)What is Scope?</h1>
-            <p class="font-medium mt-4 pl-5">Answer:Scope in JS is used to define where a variable can be access or used within a program. It can be of 4 types:Global Scope, Function Scope, Local Scope, Block Scope, Lexical Scope</p>
-             <p class="mt-1 pb-6 pl-5"> 
-                <p><b class="font-bold text-red-600 pl-5">Global Scope:</b> Global scope refers to a variable which is declared outside any function or block and it can be accessed anywhere in the program either inside the function or outside</p>
-                <p class="pl-5 pb-2">e.g.   <br>
-                    const appName = "My App";   <br>
+            <p class="font-medium mt-4 pl-5">Answer:Scope in JS is used to define where a variable can be access or used
+                within a program. It can be of 4 types:Global Scope, Function Scope, Local Scope, Block Scope, Lexical
+                Scope</p>
+            <p class="mt-1 pb-6 pl-5">
+            <p><b class="font-bold text-red-600 pl-5">Global Scope:</b> Global scope refers to a variable which is
+                declared outside any function or block and it can be accessed anywhere in the program either inside the
+                function or outside</p>
+            <p class="pl-5 pb-2">e.g. <br>
+                const appName = "My App"; <br>
 
-                    function showName() {   <br>
-                    console.log(appName);   <br>
-                    } 
-                </p>
+                function showName() { <br>
+                console.log(appName); <br>
+                }
+            </p>
 
-                <p><b class="font-bold text-red-600 pl-5">Local Scope:</b>It is a variable which is declared inside a function or block and cannot be accessed outside that function.</p>
-                <p class="pl-5 pb-2">e.g.   <br>
-                
-                    function showName() {   <br>
-                        const appName = "My App";   <br>
-                        console.log(appName);   <br>
-                    } 
-                </p>
+            <p><b class="font-bold text-red-600 pl-5">Local Scope:</b>It is a variable which is declared inside a
+                function or block and cannot be accessed outside that function.</p>
+            <p class="pl-5 pb-2">e.g. <br>
 
-                <p><b class="font-bold text-red-600 pl-5">Function Scope:</b>It is similar to local scope, a variable which is declared inside a function by using let var or const and cannot be accessed outside that function.</p>
-                <p class="pl-5 pb-2">e.g.   <br>
-                
-                    function showName() {   <br>
-                        const appName = "My App";   <br>
-                        console.log(appName);   <br>
-                    } 
-                </p>
-                
+                function showName() { <br>
+                const appName = "My App"; <br>
+                console.log(appName); <br>
+                }
+            </p>
 
-                <p><b class="font-bold text-red-600 pl-5">Block Scope:</b>It is similar to local scope, a variable which is declared inside a  { }by using let or const and cannot be accessed outside that block.</p>
-                <p class="pl-5 pb-2">e.g.   <br>
-                
-                    function showName() {   <br>
-                        const appName = "My App";   <br>
-                        console.log(appName);   <br>
-                    } 
-                </p>
-                <p class="pl-5 pb-2">var is not a block scoped</p>
-                <p><b class="font-bold text-red-600 pl-5">Lexical scope:</b>It means a function can access variables from the scope where the function was defined—not where it is called.</p>
-                <p class="pl-5 pb-2">e.g.   <br>
-                
-                    const outer = "outside";    <br>
+            <p><b class="font-bold text-red-600 pl-5">Function Scope:</b>It is similar to local scope, a variable which
+                is declared inside a function by using let var or const and cannot be accessed outside that function.
+            </p>
+            <p class="pl-5 pb-2">e.g. <br>
 
-                    function parent() { <br>
-                    const inner = "inside"; <br>
+                function showName() { <br>
+                const appName = "My App"; <br>
+                console.log(appName); <br>
+                }
+            </p>
 
-                    function child() {  <br>
-                        console.log(outer); // outside  <br>
-                        console.log(inner); // inside   <br>
-                    }   <br>
 
-                    child();    <br>
-                    }   <br>
+            <p><b class="font-bold text-red-600 pl-5">Block Scope:</b>It is similar to local scope, a variable which is
+                declared inside a { }by using let or const and cannot be accessed outside that block.</p>
+            <p class="pl-5 pb-2">e.g. <br>
 
-                    parent();   <br>
-                </p>
+                function showName() { <br>
+                const appName = "My App"; <br>
+                console.log(appName); <br>
+                }
+            </p>
+            <p class="pl-5 pb-2">var is not a block scoped</p>
+            <p><b class="font-bold text-red-600 pl-5">Lexical scope:</b>It means a function can access variables from
+                the scope where the function was defined—not where it is called.</p>
+            <p class="pl-5 pb-2">e.g. <br>
+
+                const outer = "outside"; <br>
+
+                function parent() { <br>
+                const inner = "inside"; <br>
+
+                function child() { <br>
+                console.log(outer); // outside <br>
+                console.log(inner); // inside <br>
+                } <br>
+
+                child(); <br>
+                } <br>
+
+                parent(); <br>
+            </p>
 
             </p>
         </div>
 
-         <div
+        <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
             <h1 class="font-bold text-xl pl-5">Q(16)What is Hoisting?</h1>
-            <p class="font-medium mt-4 pl-5">Answer:Hoisting is the behavior of js where the declaration of function or classes or variables are moves to the top of their scope during the compilation phase.</p>
-            <p class="font-medium mt-2 pl-5">Function Declaration are fully hoisted , <br> var is hosited and initialized with undefined <br> let and const are hoisted but cannot be accessed before their declaration due to the temporal dead zone (TDZ).</p>
-            <p class="mt-4 pb-6 pl-5"> 
+            <p class="font-medium mt-4 pl-5">Answer:Hoisting is the behavior of js where the declaration of function or
+                classes or variables are moves to the top of their scope during the compilation phase.</p>
+            <p class="font-medium mt-2 pl-5">Function Declaration are fully hoisted , <br> var is hosited and
+                initialized with undefined <br> let and const are hoisted but cannot be accessed before their
+                declaration due to the temporal dead zone (TDZ).</p>
+            <p class="mt-4 pb-6 pl-5">
                 Function Declaration: <br>
-                greet();    <br>
-                function greet() {  <br>
-                    console.log("Hello");   <br>
+                greet(); <br>
+                function greet() { <br>
+                console.log("Hello"); <br>
                 } <br>
 
-                var:        <br>
+                var: <br>
                 console.log(name); // undefined <br>
-                var name = "Asha";  <br> <br>
+                var name = "Asha"; <br> <br>
 
-                let and const:  <br>
+                let and const: <br>
                 console.log(age); // ReferenceError <br>
                 let age = 22;
             </p>
@@ -530,11 +581,12 @@
         <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
             <h1 class="font-bold text-xl pl-5">Q(17)What is Temporal Dead Zone(TDZ)?</h1>
-            <p class="font-medium mt-4 pl-5">Answer:It is the period between entering a scope and initalization of a variables declared with let and const, during which accessing them results in an referrence error.</p>
-            <p class="mt-4 pb-6 pl-5"> 
+            <p class="font-medium mt-4 pl-5">Answer:It is the period between entering a scope and initalization of a
+                variables declared with let and const, during which accessing them results in an referrence error.</p>
+            <p class="mt-4 pb-6 pl-5">
                 hello() <br>
-                let hello=function(){   <br>
-                    console.log('hi')
+                let hello=function(){ <br>
+                console.log('hi')
                 }
             </p>
         </div>
@@ -542,21 +594,22 @@
         <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
             <h1 class="font-bold text-xl pl-5">Q(18)What is closure?</h1>
-            <p class="font-medium mt-4 pl-5">Answer:A closure is created when an variable of an inner function can access the value from an outer function even if the outer function has finished executing</p>
-            <p class="mt-4 pl-5"> 
-                function createCounter() {  <br>
-                let count = 0;  <br>
+            <p class="font-medium mt-4 pl-5">Answer:A closure is created when an variable of an inner function can
+                access the value from an outer function even if the outer function has finished executing</p>
+            <p class="mt-4 pl-5">
+                function createCounter() { <br>
+                let count = 0; <br>
 
-                return function () {    <br>
-                    count++;    <br>
-                    return count;   <br>
-                };  <br>
-                }   <br>
+                return function () { <br>
+                count++; <br>
+                return count; <br>
+                }; <br>
+                } <br>
 
-                const counter = createCounter();    <br>
+                const counter = createCounter(); <br>
 
-                console.log(counter()); // 1    <br>
-                console.log(counter()); // 2    <br>
+                console.log(counter()); // 1 <br>
+                console.log(counter()); // 2 <br>
                 console.log(counter()); // 3
             </p>
             <p class="mt-4 pl-5">Uses:</p>
@@ -571,10 +624,11 @@
         <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
             <h1 class="font-bold text-xl pl-5">Q(19)What is IIFE?</h1>
-            <p class="font-medium mt-4 pl-5">Answer:IIFE stand for Immediately Invoked Function. It is a function that is created and executed immediately.</p>
-            <p class="mt-4 pb-6 pl-5"> 
-                (function () {  <br>
-                    console.log("Runs immediately");    <br>
+            <p class="font-medium mt-4 pl-5">Answer:IIFE stand for Immediately Invoked Function. It is a function that
+                is created and executed immediately.</p>
+            <p class="mt-4 pb-6 pl-5">
+                (function () { <br>
+                console.log("Runs immediately"); <br>
                 })();
             </p>
         </div>
@@ -582,25 +636,27 @@
         <div
             class="border-be-blue-600 mt-10 border-l-blue-600 border-be-4 border-l-6 transition-transform hover:-translate-y-3 hover:bg-blue-200">
             <h1 class="font-bold text-xl pl-5">Q(20)What is Currying Function?</h1>
-            <p class="font-medium mt-4 pl-5">Answer:It transforms a function of multiple arguments into a series of functions each having one argument..</p>
-            <p class="mt-4 pb-6 pl-5"> 
-                function add(a){    <br>
-                    return function(b){ <br>
-                        return a+b  <br>
-                    }   <br>
-                }   <br>
-                const addTwo=add(2) //calls the first function  <br>
-                console.log(addTwo(4)) //calls the second function  <br>
+            <p class="font-medium mt-4 pl-5">Answer:It transforms a function of multiple arguments into a series of
+                functions each having one argument..</p>
+            <p class="mt-4 pb-6 pl-5">
+                function add(a){ <br>
+                return function(b){ <br>
+                return a+b <br>
+                } <br>
+                } <br>
+                const addTwo=add(2) //calls the first function <br>
+                console.log(addTwo(4)) //calls the second function <br>
 
-                or  <br>
+                or <br>
 
-                const addTwo=add(2)(4)  <br>
+                const addTwo=add(2)(4) <br>
                 console.log(addTwo)
             </p>
         </div>
 
         <div class="flex justify-between ">
-            <div class="pl-16 bg-blue-800 text-white mt-20 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
+            <div
+                class="pl-16 bg-blue-800 text-white mt-20 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
                 <h1 class="text-3xl font-bold">Practice Questions</h1>
                 <div class="mt-5 pl-12 pb-10 leading-11">
                     <h2 class="font-semibold text-lg pt-3">1.Fibonacci</h2>
@@ -612,29 +668,33 @@
                     <h2 class="font-semibold text-lg pt-3">7.Multiplication Table</h2>
                     <h2 class="font-semibold text-lg pt-3">8.Factorial</h2>
                 </div>
-                <a href="exercise.html" class="pt-28 text-lg font-bold pl-20 text-white">Go to Exercise 🡺</a>    
+                <a href="exercise.html" class="pt-28 text-lg font-bold pl-20 text-white">Go to Exercise 🡺</a>
             </div>
 
-            <div class="pl-16 bg-blue-800 text-white mt-20 mr-28 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
+            <div
+                class="pl-16 bg-blue-800 text-white mt-20 mr-28 w-112.5 ml-16 rounded-3xl transition-transform hover:-translate-y-3">
                 <h1 class="text-3xl font-bold">Interview Questions</h1>
                 <div class="mt-5 pl-3">
                     <h2 class="font-semibold text-lg pt-2 text-blue-50">1.What is hoisting?</h2>
                     <h2 class="font-semibold text-lg pt-2 text-blue-50">2.What is closure?</h2>
                     <h2 class="font-semibold text-lg pt-2 text-blue-50">3.What is lexical scope?</h2>
                     <h2 class="font-semibold text-lg pt-2 text-blue-50">4.undefined vs null</h2>
-                    <h2 class="font-semibold text-lg pt-2 text-blue-50">5.Function declaration and function expression</h2>
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">5.Function declaration and function expression
+                    </h2>
                     <h2 class="font-semibold text-lg pt-2 text-blue-50">6.Arrow function and Normal function</h2>
-                    <h2 class="font-semibold text-lg pt-2 text-blue-50">7.this keyword(Ans: this is a keyword that refers to the object that is currently executing the function. Its value depends on how the function is called.)</h2>
+                    <h2 class="font-semibold text-lg pt-2 text-blue-50">7.this keyword(Ans: this is a keyword that
+                        refers to the object that is currently executing the function. Its value depends on how the
+                        function is called.)</h2>
                     <h2 class="font-semibold text-lg pt-2 text-blue-50">8.Callback Function</h2>
                 </div>
 
             </div>
         </div>
 
-    <footer class="text-center bg-blue-950 text-white text-2xl font-semibold mt-10 pt-3 pb-2">
-        &copy; Nirupama Majhi 2026 
-    </footer>
-    <script src="script.js"></script>
+        <footer class="text-center bg-blue-950 text-white text-2xl font-semibold mt-10 pt-3 pb-2">
+            &copy; Nirupama Majhi 2026
+        </footer>
+        <script src="script.js"></script>
 </body>
 
 </html>
